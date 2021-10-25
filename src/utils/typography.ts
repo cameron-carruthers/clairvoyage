@@ -1,4 +1,4 @@
-import { textColor, tertiaryColor } from '.';
+import { textColor, tertiaryColor } from './colors';
 
 export const primaryFont = 'Open Sans; sans-serif';
 export const secondaryFont = 'Sofia; sans-serif';
