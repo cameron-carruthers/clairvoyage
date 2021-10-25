@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryFont } from '../../utils';
+import { primaryFont, tertiaryColor } from '../../utils';
 
 const ButtonStyle = styled.button`
   padding: 0.5rem 2rem;
@@ -11,6 +11,18 @@ const ButtonStyle = styled.button`
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
+  &:hover, &:focus, &:active {
+    background: linear-gradient(85.69deg, #8A007D 0%, #BD00AB 100%);
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: 2px solid ${tertiaryColor};
+    outline-offset: 2px;
+  }
 `
 
 interface ButtonProps {
