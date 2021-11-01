@@ -93,7 +93,7 @@ const Home: NextPage = () => {
         >
           Powered by{' '}
           <Logo>
-            <Image src="/chat.svg" alt="Chat Icon" width={32} height={32} />>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </Logo>
         </a>
       </Footer>
