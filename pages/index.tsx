@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components';
-import Button from '../src/components/Button';
-import { headingOne, primaryLight, secondaryLight } from '../src/utils';
+import Button from '../src/components/atoms/Button';
+import { headingOne, primaryLight, secondaryLight } from '../src/theme';
 
 const GradientAnimation = keyframes`
   0% {
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
         >
           Powered by{' '}
           <Logo>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/chat.svg" alt="Chat Icon" width={32} height={32} />>
           </Logo>
         </a>
       </Footer>

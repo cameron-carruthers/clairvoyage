@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryFont, tertiaryColor } from '../../utils';
+import { primaryFont, tertiaryColor } from '../../../theme';
 
 const ButtonStyle = styled.button`
   padding: 0.5rem 2rem;
