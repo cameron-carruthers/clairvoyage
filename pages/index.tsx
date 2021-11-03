@@ -20,11 +20,6 @@ const projects = [
     name: 'Colby'
   },
   {
-    id: '2',
-    icon: 'laptop',
-    name: 'Cameron'
-  },
-  {
     id: '4',
     icon: 'music',
     name: 'Collin'
@@ -87,11 +82,12 @@ const Home: NextPage = () => {
             channels={channels}
           />
         }
-        mainContent={<div>Hello World</div>}
         rightSidebar={
           <div>Hello from Right Sidebar</div>
         }
-      />
+      >
+        <div>Does this still work?</div>
+      </PageLayout>
     </>
   )
 }

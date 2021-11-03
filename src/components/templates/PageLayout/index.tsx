@@ -11,15 +11,15 @@ const Container = styled.div`
 interface PageLayoutProps {
   leftSidebar: ReactElement
   rightSidebar: ReactElement
-  mainContent: ReactElement
+  children: ReactElement
 }
 
-const PageLayout = ({ leftSidebar, rightSidebar, mainContent }: PageLayoutProps) => (
+const PageLayout = ({ leftSidebar, rightSidebar, children }: PageLayoutProps) => (
   <Container>
     <SidebarLayout>
       {leftSidebar}
     </SidebarLayout>
-      {mainContent}
+      {children}
     <SidebarLayout>
       {rightSidebar}
     </SidebarLayout>

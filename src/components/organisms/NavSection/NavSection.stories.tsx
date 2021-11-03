@@ -30,11 +30,6 @@ Projects.args = {
       name: 'Colby'
     },
     {
-      id: '2',
-      icon: 'laptop',
-      name: 'Cameron'
-    },
-    {
       id: '4',
       icon: 'music',
       name: 'Collin'
