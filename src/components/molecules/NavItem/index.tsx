@@ -12,6 +12,7 @@ const Name = styled.div`
   font-family: ${mediumText.fontFamily};
   font-size: ${mediumText.fontSize.desktop};
   font-weight: ${mediumText.fontWeight};
+  color: ${mediumText.color};
 
   @media (max-width: 600px) {
     font-size: ${mediumText.fontSize.mobile};

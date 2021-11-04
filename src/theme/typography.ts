@@ -1,7 +1,7 @@
 import { textColor, tertiaryColor } from './colors';
 
-export const primaryFont = 'Open Sans; sans-serif';
-export const secondaryFont = 'Sofia; sans-serif';
+export const primaryFont = 'Open Sans, sans-serif';
+export const secondaryFont = 'Sofia, sans-serif';
 
 export const headingOne = {
   fontFamily: secondaryFont,

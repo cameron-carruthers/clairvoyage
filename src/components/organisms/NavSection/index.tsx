@@ -6,9 +6,10 @@ const NavHeader = styled.h1`
   font-family: ${navigationHeading.fontFamily};
   font-size: ${navigationHeading.fontSize.desktop};
   font-weight: ${navigationHeading.fontWeight};
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-  line-height: 0;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 1rem;
+  color: ${navigationHeading.color};
 
   @media (max-width: 600px) {
     font-size: ${navigationHeading.fontSize.mobile};
