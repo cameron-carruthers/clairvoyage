@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import PageLayout from '../src/components/templates/PageLayout';
 import LeftSidebar from '../src/components/organisms/LeftSidebar';
+import RightSidebar from '../src/components/organisms/RightSidebar';
 
 const projects = [
   {
@@ -64,6 +65,11 @@ const channels = [
   }
 ]
 
+const goals = {
+  learningGoal: 'Watch first section of Typography course on Frontend Masters and read Typography chapter in Design for Hackers',
+  creativeGoal: 'Create design system (Color scheme, typography, buttons) and add wireframes for other parts of the site'
+}
+
 const Home: NextPage = () => {
   return (
     <>
@@ -83,7 +89,9 @@ const Home: NextPage = () => {
           />
         }
         rightSidebar={
-          <div>Hello from Right Sidebar</div>
+          <RightSidebar
+            goals={goals}
+          />
         }
       >
         <div>Does this still work?</div>

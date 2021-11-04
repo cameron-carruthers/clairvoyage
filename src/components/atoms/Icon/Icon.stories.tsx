@@ -15,19 +15,19 @@ Chat.args = {
   iconName: 'chat'
 }
 
-export const Checkmark = Template.bind({});
-Checkmark.args = {
-  iconName: 'checkmark'
+export const Success = Template.bind({});
+Success.args = {
+  iconName: 'success'
 }
 
-export const Circle = Template.bind({});
-Circle.args = {
-  iconName: 'circle'
+export const Incomplete = Template.bind({});
+Incomplete.args = {
+  iconName: 'incomplete'
 }
 
-export const Close = Template.bind({});
-Close.args = {
-  iconName: 'close'
+export const Fail = Template.bind({});
+Fail.args = {
+  iconName: 'fail'
 }
 
 export const Edit = Template.bind({});
