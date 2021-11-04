@@ -8,7 +8,6 @@ const Heading = styled.h2`
   color: ${bodyIntroText.color};
   line-height: 1.5;
   margin: 0;
-  margin-top: 0.5rem;
 
   @media (max-width: 600px) {
     font-size: ${bodyIntroText.fontSize.mobile};
@@ -28,16 +27,21 @@ const Text = styled.p`
   }
 `
 
+const Container = styled.div`
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+`
+
 interface CurrentGoalProps {
   heading: string,
   text: string
 }
 
 const CurrentGoal = ({ heading, text }: CurrentGoalProps) => (
-  <div>
+  <Container>
     <Heading>{heading}</Heading>
     <Text>{text}</Text>
-  </div>
+  </Container>
 )
 
 export default CurrentGoal;

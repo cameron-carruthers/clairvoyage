@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import PageLayout from '../src/components/templates/PageLayout';
-import LeftSidebar from '../src/components/organisms/LeftSidebar';
-import RightSidebar from '../src/components/organisms/RightSidebar';
+import LeftSidebar from '../src/components/organisms/LeftSidebarContent';
+import RightSidebar from '../src/components/organisms/RightSidebarContent';
 
 const projects = [
   {
@@ -70,6 +70,57 @@ const goals = {
   creativeGoal: 'Create design system (Color scheme, typography, buttons) and add wireframes for other parts of the site'
 }
 
+const weeklyStatuses = [
+  {
+    week: 1,
+    status: 'success'
+  },
+  {
+    week: 2,
+    status: 'success'
+  },
+  {
+    week: 3,
+    status: 'success'
+  },
+  {
+    week: 4,
+    status: 'success'
+  },
+  {
+    week: 5,
+    status: 'fail'
+  },
+  {
+    week: 6,
+    status: 'success'
+  },
+  {
+    week: 7,
+    status: 'success'
+  },
+  {
+    week: 8,
+    status: 'success'
+  },
+  {
+    week: 9,
+    status: 'success'
+  },
+  {
+    week: 10,
+    status: 'incomplete'
+  },
+  {
+    week: 11,
+    status: 'incomplete'
+  },
+  {
+    week: 12,
+    status: 'incomplete'
+  }
+]
+
 const Home: NextPage = () => {
   return (
     <>
@@ -91,6 +142,7 @@ const Home: NextPage = () => {
         rightSidebar={
           <RightSidebar
             goals={goals}
+            weeklyStatuses={weeklyStatuses}
           />
         }
       >

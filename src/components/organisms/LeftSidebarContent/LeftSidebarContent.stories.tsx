@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import LeftSidebar from '.';
+import LeftSidebarContent from '.';
 
 export default {
-  title: 'LeftSidebar',
-  component: LeftSidebar
-} as ComponentMeta<typeof LeftSidebar>;
+  title: 'LeftSidebarContent',
+  component: LeftSidebarContent
+} as ComponentMeta<typeof LeftSidebarContent>;
 
-const Template: ComponentStory<typeof LeftSidebar> = (args) => <LeftSidebar  {...args} />;
+const Template: ComponentStory<typeof LeftSidebarContent> = (args) => <LeftSidebarContent  {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

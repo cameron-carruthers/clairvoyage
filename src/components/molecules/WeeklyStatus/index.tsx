@@ -9,7 +9,6 @@ const Container = styled.div`
 `
 
 const Week = styled.div`
-  margin-left: 1rem;
   font-family: ${mediumText.fontFamily};
   font-size: ${mediumText.fontSize.desktop};
   font-weight: ${mediumText.fontWeight};
