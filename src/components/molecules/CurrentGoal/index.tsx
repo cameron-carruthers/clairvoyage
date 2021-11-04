@@ -8,6 +8,7 @@ const Heading = styled.h2`
   color: ${bodyIntroText.color};
   line-height: 1.5;
   margin: 0;
+  margin-top: 0.5rem;
 
   @media (max-width: 600px) {
     font-size: ${bodyIntroText.fontSize.mobile};
