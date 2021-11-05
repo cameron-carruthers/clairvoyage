@@ -5,6 +5,12 @@ import Icon from '../../atoms/Icon';
 const Container = styled.div`
   display: flex;
   align-items: center;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+  }
 `
 
 const Name = styled.div`
