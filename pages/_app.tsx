@@ -1,6 +1,6 @@
-import { createGlobalStyle, ThemeProvider, keyframes } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 import type { AppProps } from 'next/app';
-import { headingOne, primaryLight, secondaryLight } from '../src/theme';
+import { primaryLight, secondaryLight } from '../src/theme';
 
 const GradientAnimation = keyframes`
   0% {
@@ -28,9 +28,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: Open Sans, sans-serif;
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -46,18 +44,10 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
-
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Component {...pageProps} />
-    </ThemeProvider>
   </>
 )
 

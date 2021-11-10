@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import PageLayout from '../src/components/templates/PageLayout';
-import LeftSidebar from '../src/components/organisms/LeftSidebarContent';
-import RightSidebar from '../src/components/organisms/RightSidebarContent';
+import LeftSidebarContent from '../src/components/organisms/LeftSidebarContent';
+import RightSidebarContent from '../src/components/organisms/RightSidebarContent';
+import MobileMenuContent from '../src/components/organisms/MobileMenuContent';
 
 const projects = [
   {
@@ -134,19 +135,25 @@ const Home: NextPage = () => {
       </Head>
       <PageLayout 
         leftSidebar={
-          <LeftSidebar 
+          <LeftSidebarContent 
             projects={projects}
             channels={channels}
           />
         }
         rightSidebar={
-          <RightSidebar
+          <RightSidebarContent
             goals={goals}
             weeklyStatuses={weeklyStatuses}
           />
         }
+        mobileMenu={
+          <MobileMenuContent
+            projects={projects}
+            channels={channels}
+          />
+        }
       >
-        <div>Does this still work?</div>
+        <div>Hello once again</div>
       </PageLayout>
     </>
   )

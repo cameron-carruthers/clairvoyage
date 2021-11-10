@@ -11,8 +11,7 @@ const Sidebar = styled.aside`
   -webkit-backdrop-filter: blur( 10px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0.5rem;
 `
 
 const SidebarLayout: FunctionComponent = ({ children }) => (

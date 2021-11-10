@@ -1,7 +1,7 @@
 import NavItem from '../../molecules/NavItem';
 import NavSection from '../NavSection';
 
-interface LeftSidebarContentProps {
+interface MobileMenuContentProps {
   projects: NavItem[],
   channels: NavItem[]
 }
@@ -12,12 +12,11 @@ interface NavItem {
   name: string
 }
 
-const LeftSidebarContent = ({ projects, channels }: LeftSidebarContentProps) => (
+const MobileMenuContent = ({ projects, channels }: MobileMenuContentProps) => (
   <nav>
-    <NavItem icon='home' name='Home' />
     <NavSection navHeader='Projects' navItems={projects} />
     <NavSection navHeader='Channels' navItems={channels} />
   </nav>
 )
 
-export default LeftSidebarContent;
+export default MobileMenuContent;

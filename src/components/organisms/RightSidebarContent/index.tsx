@@ -1,7 +1,7 @@
 import CurrentGoals from '../CurrentGoals';
 import SeasonProgress from '../SeasonProgress';
 
-interface RightSidebarProps {
+interface RightSidebarContentProps {
   goals: CurrentGoals,
   weeklyStatuses: WeeklyStatus[]
 }
@@ -16,7 +16,7 @@ interface WeeklyStatus {
   status: string
 }
 
-const RightSidebar = ({ goals, weeklyStatuses }: RightSidebarProps ) => (
+const RightSidebarContent = ({ goals, weeklyStatuses }: RightSidebarContentProps ) => (
   <>
     <CurrentGoals 
       learningGoal={goals.learningGoal}
@@ -26,4 +26,4 @@ const RightSidebar = ({ goals, weeklyStatuses }: RightSidebarProps ) => (
   </>
 )
 
-export default RightSidebar;
+export default RightSidebarContent;

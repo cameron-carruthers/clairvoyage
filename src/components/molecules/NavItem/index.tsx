@@ -6,9 +6,14 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   border-radius: 0.5rem;
+  border: 1px solid rgba( 255, 255, 255, 0 );
 
   &:hover {
-    background-color: white;
+    background: rgba( 255, 255, 255, 0.8 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     cursor: pointer;
   }
 `
