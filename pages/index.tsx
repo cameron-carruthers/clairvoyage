@@ -129,9 +129,6 @@ const Home: NextPage = () => {
         <title>Clairvoyage</title>
         <meta name="description" content="A 12 week journey for creators" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
-        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet" />
       </Head>
       <PageLayout 
         leftSidebar={
