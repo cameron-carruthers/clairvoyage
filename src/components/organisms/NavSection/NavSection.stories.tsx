@@ -61,6 +61,9 @@ Projects.args = {
     }
   ]
 }
+Projects.parameters = {
+  backgrounds: { default: 'light' }
+};
 
 export const Channels = Template.bind({});
 Channels.args = {
@@ -78,3 +81,6 @@ Channels.args = {
     }
   ]
 }
+Channels.parameters = {
+  backgrounds: { default: 'light' }
+};

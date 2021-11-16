@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { FunctionComponent } from 'react';
-import { tertiaryColor, primaryColor } from '../../../theme';
 
 const Sidebar = styled.aside`
   width: 12.5rem;

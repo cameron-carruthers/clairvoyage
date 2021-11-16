@@ -143,12 +143,6 @@ const Home: NextPage = () => {
             weeklyStatuses={weeklyStatuses}
           />
         }
-        mobileMenu={
-          <MobileMenuContent
-            projects={projects}
-            channels={channels}
-          />
-        }
       >
         <div></div>
       </PageLayout>

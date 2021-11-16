@@ -15,3 +15,6 @@ export const Default = Template.bind({});
 Default.args = {
   text: 'Submit',
 };
+Default.parameters = {
+  backgrounds: { default: 'light' }
+};

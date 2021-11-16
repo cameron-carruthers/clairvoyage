@@ -63,3 +63,6 @@ Default.args = {
     }
   ]
 }
+Default.parameters = {
+  backgrounds: { default: 'light' }
+};

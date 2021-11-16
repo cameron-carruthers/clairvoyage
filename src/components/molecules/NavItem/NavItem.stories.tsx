@@ -15,15 +15,24 @@ BlaineVideoEditing.args = {
   icon: 'video',
   name: 'Blaine'
 }
+BlaineVideoEditing.parameters = {
+  backgrounds: { default: 'light' }
+};
 
 export const CameronWebDevelopment = Template.bind({});
 CameronWebDevelopment.args = {
   icon: 'laptop',
   name: 'Cameron'
 }
+CameronWebDevelopment.parameters = {
+  backgrounds: { default: 'light' }
+};
 
 export const GeneralChannel = Template.bind({});
 GeneralChannel.args = {
   icon: 'chat',
   name: 'General'
 }
+GeneralChannel.parameters = {
+  backgrounds: { default: 'light' }
+};

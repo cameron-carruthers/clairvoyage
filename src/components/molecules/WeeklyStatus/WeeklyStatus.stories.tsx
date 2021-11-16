@@ -15,15 +15,24 @@ Success.args = {
   week: 1,
   status: 'success'
 }
+Success.parameters = {
+  backgrounds: { default: 'light' }
+};
 
 export const Fail = Template.bind({});
 Fail.args = {
   week: 2,
   status: 'fail'
 }
+Fail.parameters = {
+  backgrounds: { default: 'light' }
+};
 
 export const Incomplete = Template.bind({});
 Incomplete.args = {
   week: 3,
   status: 'incomplete'
 }
+Incomplete.parameters = {
+  backgrounds: { default: 'light' }
+};

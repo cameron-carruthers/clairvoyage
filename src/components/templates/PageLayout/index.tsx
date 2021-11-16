@@ -28,7 +28,7 @@ interface PageLayoutProps {
   mobileMenu: ReactElement
 }
 
-const PageLayout = ({ leftSidebar, rightSidebar, mobileMenu, children }: PageLayoutProps) => {
+const PageLayout = ({ leftSidebar, rightSidebar, children }: PageLayoutProps) => {
   const [open, setOpen] = useState(false);
 
   return ( 
@@ -47,7 +47,7 @@ const PageLayout = ({ leftSidebar, rightSidebar, mobileMenu, children }: PageLay
         <div>
           <Hamburger open={open} setOpen={setOpen} />
           <MobileMenuLayout open={open}>
-            {mobileMenu}
+            {leftSidebar}
           </MobileMenuLayout>
         </div>
       </MobileContainer>
