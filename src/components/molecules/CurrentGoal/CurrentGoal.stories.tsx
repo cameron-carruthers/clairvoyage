@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import CurrentGoal from '.';
 
 export default {
-  title: 'CurrentGoal',
+  title: 'Molecules/CurrentGoal',
   component: CurrentGoal
 } as ComponentMeta<typeof CurrentGoal>;
 

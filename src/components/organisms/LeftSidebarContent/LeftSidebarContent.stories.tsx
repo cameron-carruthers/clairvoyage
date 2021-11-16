@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import LeftSidebarContent from '.';
 
 export default {
-  title: 'LeftSidebarContent',
+  title: 'Organisms/LeftSidebarContent',
   component: LeftSidebarContent
 } as ComponentMeta<typeof LeftSidebarContent>;
 

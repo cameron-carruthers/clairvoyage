@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import WeeklyStatus from '.';
 
 export default {
-  title: 'WeeklyStatus',
+  title: 'Molecules/WeeklyStatus',
   component: WeeklyStatus
 } as ComponentMeta<typeof WeeklyStatus>;
 

@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import NavItem from '.';
 
 export default {
-  title: 'NavItem',
+  title: 'Molecules/NavItem',
   component: NavItem
 } as ComponentMeta<typeof NavItem>;
 

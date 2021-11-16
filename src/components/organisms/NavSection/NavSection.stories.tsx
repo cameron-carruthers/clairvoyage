@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import NavSection from '.';
 
 export default {
-  title: 'NavSection',
+  title: 'Organisms/NavSection',
   component: NavSection
 } as ComponentMeta<typeof NavSection>;
 

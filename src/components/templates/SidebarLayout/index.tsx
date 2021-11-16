@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FunctionComponent } from 'react';
+import { tertiaryColor, primaryColor } from '../../../theme';
 
 const Sidebar = styled.aside`
   width: 12.5rem;
@@ -12,6 +13,7 @@ const Sidebar = styled.aside`
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 1rem;
   margin: 0.5rem;
+  overflow: scroll;
 `
 
 const SidebarLayout: FunctionComponent = ({ children }) => (

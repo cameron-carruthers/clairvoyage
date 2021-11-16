@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Hamburger from '.';
 
 export default {
-  title: 'Hamburger',
+  title: 'Atoms/Hamburger',
   component: Hamburger
 } as ComponentMeta<typeof Hamburger>;
 

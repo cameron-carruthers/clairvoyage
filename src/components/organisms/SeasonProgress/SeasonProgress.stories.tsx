@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import SeasonProgress from '.';
 
 export default {
-  title: 'SeasonProgress',
+  title: 'Organisms/SeasonProgress',
   component: SeasonProgress
 } as ComponentMeta<typeof SeasonProgress>;
 

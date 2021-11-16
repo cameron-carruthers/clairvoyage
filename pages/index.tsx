@@ -150,7 +150,7 @@ const Home: NextPage = () => {
           />
         }
       >
-        <div>Hello once again</div>
+        <div></div>
       </PageLayout>
     </>
   )
