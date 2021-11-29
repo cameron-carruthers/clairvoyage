@@ -12,7 +12,7 @@ interface HamburgerProps {
 
 const Container = styled.button<ContainerProps>`
   position: absolute;
-  top: 3%;
+  top: 1rem;
   right: 1rem;
   display: flex;
   flex-direction: column;

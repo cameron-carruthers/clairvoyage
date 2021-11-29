@@ -3,7 +3,7 @@ import Head from 'next/head'
 import PageLayout from '../src/components/templates/PageLayout';
 import LeftSidebarContent from '../src/components/organisms/LeftSidebarContent';
 import RightSidebarContent from '../src/components/organisms/RightSidebarContent';
-import MobileMenuContent from '../src/components/organisms/MobileMenuContent';
+import SubmitProgressForm from '../src/components/organisms/SubmitProgressForm';
 
 const projects = [
   {
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
           />
         }
       >
-        <div></div>
+        <SubmitProgressForm currentWeek={9} />
       </PageLayout>
     </>
   )

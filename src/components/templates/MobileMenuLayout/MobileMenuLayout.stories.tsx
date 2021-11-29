@@ -5,7 +5,7 @@ import MobileMenuLayout from '.';
 import LeftSidebarContent from '../../organisms/LeftSidebarContent';
 
 export default {
-  title: 'Template/MobileMenuLayout',
+  title: 'Templates/MobileMenuLayout',
   component: MobileMenuLayout
 } as ComponentMeta<typeof MobileMenuLayout>;
 

@@ -6,7 +6,7 @@ import RightSidebarContent from '../../organisms/RightSidebarContent';
 import LeftSidebarContent from '../../organisms/LeftSidebarContent';
 
 export default {
-  title: 'Template/PageLayout',
+  title: 'Templates/PageLayout',
   component: PageLayout
 } as ComponentMeta<typeof PageLayout>;
 

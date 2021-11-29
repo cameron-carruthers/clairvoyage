@@ -26,6 +26,7 @@ const TextArea = styled.textarea`
   font-weight: ${mediumText.fontWeight};
   color: ${mediumText.color};
   border: none;
+  margin-bottom: 1rem;
 
   &:focus, &:active {
     outline-color: ${tertiaryColor};
@@ -33,6 +34,7 @@ const TextArea = styled.textarea`
 
   @media (max-width: 600px) {
     font-size: ${mediumText.fontSize.mobile};
+    height: 5rem;
   }
 `
 

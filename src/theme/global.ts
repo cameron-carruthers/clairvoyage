@@ -27,14 +27,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: Open Sans, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background: linear-gradient(300deg,${primaryLight},${secondaryLight},${primaryLight});
     background-size: 180% 180%;
+    background-position: fixed;
     animation: ${GradientAnimation} 18s ease infinite;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   a {

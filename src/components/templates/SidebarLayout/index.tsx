@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { FunctionComponent } from 'react';
 
-const Sidebar = styled.aside`
-  width: 12.5rem;
+const SidebarLayout = styled.aside`
   height: 98vh;
   padding: 2rem;
   background: rgba( 255, 255, 255, 0.75 );
@@ -13,12 +11,7 @@ const Sidebar = styled.aside`
   border-radius: 1rem;
   margin: 0.5rem;
   overflow: scroll;
-`
-
-const SidebarLayout: FunctionComponent = ({ children }) => (
-  <Sidebar>
-    {children}
-  </Sidebar>
-);
+  width: 12.5rem;
+`;
 
 export default SidebarLayout;
