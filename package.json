@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN}"
+    "chromatic": "npx chromatic --storybook-build-dir storybook-static --project-token=${CHROMATIC_PROJECT_TOKEN}"
   },
   "dependencies": {
     "next": "11.1.2",
