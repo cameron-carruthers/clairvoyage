@@ -1,4 +1,4 @@
-import { textColor, tertiaryColor } from './colors';
+import { textColor, calculateTertiaryColor } from './colors';
 
 export const primaryFont = 'Open Sans, sans-serif';
 export const secondaryFont = 'Sofia, sans-serif';
@@ -50,7 +50,7 @@ export const formInputText = {
     mobile: '1rem'
   },
   fontWeight: 'bold',
-  color: tertiaryColor
+  color: calculateTertiaryColor(0)
 }
 
 export const usernameText = {
@@ -70,7 +70,7 @@ export const bodyIntroText = {
     mobile: '1rem'
   },
   fontWeight: 'bold',
-  color: tertiaryColor
+  color: calculateTertiaryColor(0)
 }
 
 export const mediumText = {

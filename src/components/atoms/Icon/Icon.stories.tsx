@@ -1,5 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { 
+  calculateTertiaryColor,
+  secondaryColor,
+  successColor,
+  textColor,
+  failColor
+} from '../../../theme';
 
 import Icon from '.';
 
@@ -12,7 +19,8 @@ const Template: ComponentStory<typeof Icon> = (args) => <Icon  {...args} />;
 
 export const Chat = Template.bind({});
 Chat.args = {
-  iconName: 'chat'
+  iconName: 'chat',
+  color: secondaryColor
 }
 Chat.parameters = {
   backgrounds: { default: 'light' }
@@ -20,7 +28,8 @@ Chat.parameters = {
 
 export const Success = Template.bind({});
 Success.args = {
-  iconName: 'success'
+  iconName: 'success',
+  color: successColor
 }
 Success.parameters = {
   backgrounds: { default: 'light' }
@@ -28,7 +37,8 @@ Success.parameters = {
 
 export const Incomplete = Template.bind({});
 Incomplete.args = {
-  iconName: 'incomplete'
+  iconName: 'incomplete',
+  color: textColor
 }
 Incomplete.parameters = {
   backgrounds: { default: 'light' }
@@ -36,7 +46,8 @@ Incomplete.parameters = {
 
 export const Fail = Template.bind({});
 Fail.args = {
-  iconName: 'fail'
+  iconName: 'fail',
+  color: failColor
 }
 Fail.parameters = {
   backgrounds: { default: 'light' }
@@ -44,7 +55,8 @@ Fail.parameters = {
 
 export const Edit = Template.bind({});
 Edit.args = {
-  iconName: 'edit'
+  iconName: 'edit',
+  color: calculateTertiaryColor(0)
 }
 Edit.parameters = {
   backgrounds: { default: 'light' }
@@ -52,7 +64,8 @@ Edit.parameters = {
 
 export const Home = Template.bind({});
 Home.args = {
-  iconName: 'home'
+  iconName: 'home',
+  color: calculateTertiaryColor(0)
 }
 Home.parameters = {
   backgrounds: { default: 'light' }
@@ -60,7 +73,8 @@ Home.parameters = {
 
 export const Laptop = Template.bind({});
 Laptop.args = {
-  iconName: 'laptop'
+  iconName: 'laptop',
+  color: calculateTertiaryColor(0)
 }
 Laptop.parameters = {
   backgrounds: { default: 'light' }
@@ -68,7 +82,8 @@ Laptop.parameters = {
 
 export const Music = Template.bind({});
 Music.args = {
-  iconName: 'music'
+  iconName: 'music',
+  color: calculateTertiaryColor(0)
 }
 Music.parameters = {
   backgrounds: { default: 'light' }
@@ -76,7 +91,8 @@ Music.parameters = {
 
 export const Picture = Template.bind({});
 Picture.args = {
-  iconName: 'picture'
+  iconName: 'picture',
+  color: calculateTertiaryColor(0)
 }
 Picture.parameters = {
   backgrounds: { default: 'light' }
@@ -84,7 +100,8 @@ Picture.parameters = {
 
 export const Video = Template.bind({});
 Video.args = {
-  iconName: 'video'
+  iconName: 'video',
+  color: calculateTertiaryColor(0)
 }
 Video.parameters = {
   backgrounds: { default: 'light' }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { calculateTertiaryColor, secondaryColor } from '../../../theme';
 
 import MobileMenuLayout from '.';
 import LeftSidebarContent from '../../organisms/LeftSidebarContent';
@@ -22,64 +23,76 @@ Open.args = {
     projects={[
       {
         id: '1',
-        icon: 'video',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Blaine'
       }, 
       {
         id: '2',
-        icon: 'laptop',
+        icon: {
+          name: 'laptop',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Cameron'
       },
       {
         id: '3',
-        icon: 'music',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Colby'
       },
       {
-        id: '2',
-        icon: 'laptop',
-        name: 'Cameron'
-      },
-      {
         id: '4',
-        icon: 'music',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Collin'
       },
       {
         id: '5',
-        icon: 'video',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Ian'
       },
       {
         id: '6',
-        icon: 'picture',
+        icon: {
+          name: 'picture',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Johnny'
       },
       {
         id: '7',
-        icon: 'edit',
+        icon: {
+          name: 'edit',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Kyle'
-      },
-      {
-        id: '8',
-        icon: 'video',
-        name: 'Ryan'
-      },
-      {
-        id: '9',
-        icon: 'video',
-        name: 'Sydney'
       }
     ]}
     channels={[
       {
         id: '1',
-        icon: 'chat',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
         name: 'General'
       },
       {
         id: '2',
-        icon: 'chat',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
         name: 'Inspiration'
       }
     ]}
@@ -93,64 +106,76 @@ Closed.args = {
     projects={[
       {
         id: '1',
-        icon: 'video',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Blaine'
       }, 
       {
         id: '2',
-        icon: 'laptop',
+        icon: {
+          name: 'laptop',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Cameron'
       },
       {
         id: '3',
-        icon: 'music',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Colby'
       },
       {
-        id: '2',
-        icon: 'laptop',
-        name: 'Cameron'
-      },
-      {
         id: '4',
-        icon: 'music',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Collin'
       },
       {
         id: '5',
-        icon: 'video',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Ian'
       },
       {
         id: '6',
-        icon: 'picture',
+        icon: {
+          name: 'picture',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Johnny'
       },
       {
         id: '7',
-        icon: 'edit',
+        icon: {
+          name: 'edit',
+          color: calculateTertiaryColor(0)
+        },
         name: 'Kyle'
-      },
-      {
-        id: '8',
-        icon: 'video',
-        name: 'Ryan'
-      },
-      {
-        id: '9',
-        icon: 'video',
-        name: 'Sydney'
       }
     ]}
     channels={[
       {
         id: '1',
-        icon: 'chat',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
         name: 'General'
       },
       {
         id: '2',
-        icon: 'chat',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
         name: 'Inspiration'
       }
     ]}

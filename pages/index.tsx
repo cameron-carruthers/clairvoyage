@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { secondaryColor, calculateTertiaryColor } from '../src/theme';
 import PageLayout from '../src/components/templates/PageLayout';
 import LeftSidebarContent from '../src/components/organisms/LeftSidebarContent';
 import RightSidebarContent from '../src/components/organisms/RightSidebarContent';
@@ -8,47 +9,74 @@ import SubmitProgressForm from '../src/components/organisms/SubmitProgressForm';
 const projects = [
   {
     id: '1',
-    icon: 'video',
+    icon: {
+      name: 'video',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Blaine'
   }, 
   {
     id: '2',
-    icon: 'laptop',
+    icon: {
+      name: 'laptop',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Cameron'
   },
   {
     id: '3',
-    icon: 'music',
+    icon: {
+      name: 'music',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Colby'
   },
   {
     id: '4',
-    icon: 'music',
+    icon: {
+      name: 'music',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Collin'
   },
   {
     id: '5',
-    icon: 'video',
+    icon: {
+      name: 'video',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Ian'
   },
   {
     id: '6',
-    icon: 'picture',
+    icon: {
+      name: 'picture',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Johnny'
   },
   {
     id: '7',
-    icon: 'edit',
+    icon: {
+      name: 'edit',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Kyle'
   },
   {
     id: '8',
-    icon: 'video',
+    icon: {
+      name: 'video',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Ryan'
   },
   {
     id: '9',
-    icon: 'video',
+    icon: {
+      name: 'video',
+      color: calculateTertiaryColor(0)
+    },
     name: 'Sydney'
   }
 ]
@@ -56,12 +84,18 @@ const projects = [
 const channels = [
   {
     id: '1',
-    icon: 'chat',
+    icon: {
+      name: 'chat',
+      color: secondaryColor
+    },
     name: 'General'
   },
   {
     id: '2',
-    icon: 'chat',
+    icon: {
+      name: 'chat',
+      color: secondaryColor
+    },
     name: 'Inspiration'
   }
 ]

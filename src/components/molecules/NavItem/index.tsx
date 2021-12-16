@@ -30,14 +30,19 @@ const Name = styled.div`
   }
 `
 
+interface Icon {
+  name: string
+  color: string
+}
+
 interface NavItemProps {
-  icon: string,
+  icon: Icon
   name: string
 }
 
 const NavItem = ({ icon, name }: NavItemProps) => (
   <Container>
-    <Icon iconName={icon} />
+    <Icon iconName={icon.name} color={icon.color} />
     <Name>{name}</Name>
   </Container>
 )

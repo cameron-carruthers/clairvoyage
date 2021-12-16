@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { calculateTertiaryColor, secondaryColor } from '../../../theme';
 
 import NavItem from '.';
 
@@ -12,7 +13,10 @@ const Template: ComponentStory<typeof NavItem> = (args) => <NavItem  {...args} /
 
 export const BlaineVideoEditing = Template.bind({});
 BlaineVideoEditing.args = {
-  icon: 'video',
+  icon: {
+    name: 'video',
+    color: calculateTertiaryColor(0)
+  },
   name: 'Blaine'
 }
 BlaineVideoEditing.parameters = {
@@ -21,7 +25,10 @@ BlaineVideoEditing.parameters = {
 
 export const CameronWebDevelopment = Template.bind({});
 CameronWebDevelopment.args = {
-  icon: 'laptop',
+  icon: {
+    name: 'laptop',
+    color: calculateTertiaryColor(0)
+  },
   name: 'Cameron'
 }
 CameronWebDevelopment.parameters = {
@@ -30,7 +37,10 @@ CameronWebDevelopment.parameters = {
 
 export const GeneralChannel = Template.bind({});
 GeneralChannel.args = {
-  icon: 'chat',
+  icon: {
+    name: 'chat',
+    color: secondaryColor
+  },
   name: 'General'
 }
 GeneralChannel.parameters = {

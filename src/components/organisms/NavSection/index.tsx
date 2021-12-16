@@ -23,8 +23,13 @@ interface NavSectionProps {
 
 interface NavItem {
   id: string,
-  icon: string,
+  icon: Icon,
   name: string
+}
+
+interface Icon {
+  name: string
+  color: string
 }
 
 const NavSection = ({ navItems, navHeader }: NavSectionProps) => (
