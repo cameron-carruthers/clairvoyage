@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { headingOne, headingThree } from '../../../theme';
 import CardLayout from '../../templates/CardLayout'
 import Input from '../../molecules/Input';
+import Button from '../../atoms/Button';
 
 const Header = styled.h1`
   font-family: ${headingOne.fontFamily};
@@ -35,6 +36,13 @@ const Goals = styled.h2`
   }
 `;
 
+const ButtonWrapper = styled.div`
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 interface SubmitProgressFormProps {
   currentWeek: number
 }
@@ -64,6 +72,9 @@ const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
       label={`Week ${currentWeek} Creative Goals`}
       rows={2}
     />
+    <ButtonWrapper>
+      <Button text='Submit' />
+    </ButtonWrapper>
   </CardLayout>
 )
 
