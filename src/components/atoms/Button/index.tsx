@@ -27,6 +27,11 @@ const ButtonStyle = styled.button`
     outline: 2px solid ${calculateTertiaryColor(0)};
     outline-offset: 2px;
   }
+
+  @media (max-width: 600px) {
+    padding: 0.25rem 1.25rem;
+    font-size: 1rem;
+  }
 `
 
 interface ButtonProps {

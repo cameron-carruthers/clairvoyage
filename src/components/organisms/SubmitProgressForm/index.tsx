@@ -47,11 +47,6 @@ interface SubmitProgressFormProps {
   currentWeek: number
 }
 
-interface WeeklyStatus {
-    week: number,
-    status: string
-}
-
 const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
   <CardLayout>
     <Header>Submit Progress</Header>
