@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { mediumText, successColor, failColor, textColor } from '../../../theme';
 import Icon from '../../atoms/Icon';
 

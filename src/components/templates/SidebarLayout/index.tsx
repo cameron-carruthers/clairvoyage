@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 const SidebarLayout = styled.aside`
   height: 98vh;

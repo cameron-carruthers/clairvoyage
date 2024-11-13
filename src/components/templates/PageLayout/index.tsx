@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { ReactElement, useState } from 'react';
 import MobileMenuLayout from '../MobileMenuLayout';
 import Hamburger from '../../atoms/Hamburger';

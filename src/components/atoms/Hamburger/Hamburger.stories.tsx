@@ -1,25 +1,24 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
 import Hamburger from '.';
 
-export default {
+const meta = {
   title: 'Atoms/Hamburger',
-  component: Hamburger
-} as ComponentMeta<typeof Hamburger>;
+  component: Hamburger,
+  args: { setOpen: fn() },
+} satisfies Meta<typeof Hamburger>;
 
-const Template: ComponentStory<typeof Hamburger> = (args) => <Hamburger {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Open = Template.bind({});
-
-Open.args = {
-  open: true,
-  setOpen: () => {}
+export const Open: Story = {
+  args: {
+    open: true,
+  },
 };
 
-export const Closed = Template.bind({});
-
-Closed.args = {
-  open: false,
-  setOpen: () => {}
-}
+export const Closed: Story = {
+  args: {
+    open: false,
+  },
+};

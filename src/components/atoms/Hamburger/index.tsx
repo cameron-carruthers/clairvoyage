@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { calculateTertiaryColor } from '../../../theme';
 
 interface ContainerProps {
@@ -38,22 +38,23 @@ const Container = styled.button<ContainerProps>`
     position: relative;
     transform-origin: 1px;
 
-    :first-child {
+    &:first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
   
-    :nth-child(2) {
+    &:nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
   
-    :nth-child(3) {
+    &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
 `;
 
 const Hamburger = ({ open, setOpen }: HamburgerProps) => {
+  console.log({ open });
   return (
     <Container open={open} onClick={() => setOpen(!open)}>
       <div />

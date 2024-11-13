@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { navigationHeading } from '../../../theme';
 import NavItem from '../../molecules/NavItem';
 

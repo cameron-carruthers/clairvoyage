@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { headingTwo } from '../../../theme';
 import CardLayout from '../../templates/CardLayout'
 import Button from '../../atoms/Button';
@@ -31,10 +31,10 @@ const ButtonWrapper = styled.div`
 
 const LoginForm = () => (
   <CardLayout>
-    <Header>Welcome Back</Header>
-    <ButtonWrapper>
-      <Button text='Login with Google' />
-    </ButtonWrapper>
+      <Header>Welcome Back</Header>
+      <ButtonWrapper>
+        <Button text='Login with Google' />
+      </ButtonWrapper>
   </CardLayout>
 )
 

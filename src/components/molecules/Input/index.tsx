@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { formInputText, mediumText, calculateTertiaryColor } from '../../../theme';
 
 interface LabelProps {

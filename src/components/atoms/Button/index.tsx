@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { primaryFont, calculateTertiaryColor } from '../../../theme';
 
 const ButtonStyle = styled.button`

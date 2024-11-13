@@ -1,5 +1,9 @@
-import styled from 'styled-components';
-import { FunctionComponent } from 'react';
+import { styled } from 'styled-components';
+import type { ReactNode } from 'react';
+
+interface CardLayoutProps {
+  children: ReactNode
+}
 
 const Card = styled.section`
   background: rgba( 255, 255, 255, 0.25 );
@@ -15,7 +19,7 @@ const Card = styled.section`
   }
 `
 
-const CardLayout: FunctionComponent = ({ children }) => (
+const CardLayout = ({ children }: CardLayoutProps) => (
   <Card>
     {children}
   </Card>

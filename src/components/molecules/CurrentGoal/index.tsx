@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { bodyIntroText, smallText } from '../../../theme';
 
 const Heading = styled.h2`

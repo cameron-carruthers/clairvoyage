@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { headingOne, headingThree } from '../../../theme';
 import CardLayout from '../../templates/CardLayout'
 import Input from '../../molecules/Input';
