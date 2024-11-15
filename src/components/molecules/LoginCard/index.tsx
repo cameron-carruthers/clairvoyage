@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 import { headingTwo } from '../../../theme';
 import CardLayout from '../../templates/CardLayout'
 import Button from '../../atoms/Button';
+import { Cloud } from '../../atoms/Cloud';
 
 const Header = styled.h1`
   font-family: ${headingTwo.fontFamily};
@@ -18,7 +19,7 @@ const Header = styled.h1`
   }
 `;
 
-const ButtonWrapper = styled.div`
+const Form = styled.form`
   margin-top: 3rem;
   display: flex;
   justify-content: center;
@@ -29,12 +30,29 @@ const ButtonWrapper = styled.div`
   }
 `
 
-const LoginForm = () => (
+const CloudOne = styled(Cloud)`
+  top: 1.5rem;
+  left: -1.5rem;
+`;
+
+const CloudTwo = styled(Cloud)`
+  animation-duration: 8s;
+  bottom: -2.5rem;
+  right: 0.5rem;
+`;
+
+interface LoginFormProps {
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => Promise<void>;
+}
+
+const LoginForm = ({ onSubmit }: LoginFormProps) => (
   <CardLayout>
-      <Header>Welcome Back</Header>
-      <ButtonWrapper>
-        <Button text='Login with Google' />
-      </ButtonWrapper>
+    <Header>Welcome Back</Header>
+    <Form onSubmit={onSubmit}>
+      <Button text='Login with Google' />
+    </Form>
+    <CloudOne />
+    <CloudTwo />
   </CardLayout>
 )
 

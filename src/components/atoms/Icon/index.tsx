@@ -10,10 +10,6 @@ import Picture from '../icons/Picture';
 import Success from '../icons/Success';
 import Video from '../icons/Video';
 
-function capitalizeFirstLetter(string: string) {
-  return string.slice(0).toUpperCase() + string.slice(1);
-}
-
 interface IconProps {
   iconName: string
   color: string

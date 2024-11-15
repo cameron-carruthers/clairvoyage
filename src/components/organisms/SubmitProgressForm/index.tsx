@@ -3,6 +3,7 @@ import { headingOne, headingThree } from '../../../theme';
 import CardLayout from '../../templates/CardLayout'
 import Input from '../../molecules/Input';
 import Button from '../../atoms/Button';
+import { Cloud } from '../../atoms/Cloud';
 
 const Header = styled.h1`
   font-family: ${headingOne.fontFamily};
@@ -47,6 +48,29 @@ interface SubmitProgressFormProps {
   currentWeek: number
 }
 
+const CloudOne = styled(Cloud)`
+  top: 0.5rem;
+  left: -1rem;
+`;
+
+const CloudTwo = styled(Cloud)`
+  animation-duration: 8s;
+  top: 9rem;
+  right: 2.5rem;
+`;
+
+const CloudThree = styled(Cloud)`
+  animation-duration: 7s;
+  bottom: 25rem;
+  left: -1.5rem;
+`;
+
+const CloudFour = styled(Cloud)`
+  animation-duration: 9s;
+  bottom: -1.5rem;
+  right: 2.5rem;
+`;
+
 const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
   <CardLayout>
     <Header>Submit Progress</Header>
@@ -70,6 +94,10 @@ const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
     <ButtonWrapper>
       <Button text='Submit' />
     </ButtonWrapper>
+    <CloudOne />
+    <CloudTwo />
+    <CloudThree />
+    <CloudFour />
   </CardLayout>
 )
 

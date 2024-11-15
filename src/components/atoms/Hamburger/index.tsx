@@ -54,7 +54,6 @@ const Container = styled.button<ContainerProps>`
 `;
 
 const Hamburger = ({ open, setOpen }: HamburgerProps) => {
-  console.log({ open });
   return (
     <Container open={open} onClick={() => setOpen(!open)}>
       <div />

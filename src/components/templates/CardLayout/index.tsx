@@ -1,23 +1,21 @@
 import { styled } from 'styled-components';
-import type { ReactNode } from 'react';
-
-interface CardLayoutProps {
-  children: ReactNode
-}
+import { ReactElement } from 'react';
 
 const Card = styled.section`
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 2rem;
+  background: hsla(0,0%,100%,.3);
+  border: 1px solid hsla(0, 0%, 100%, .8);
   padding: 3rem;
+  border-radius: 2rem;
+  position: relative;
 
   @media (max-width: 600px) {
     padding: 1.5rem;
   }
-`
+`;
+
+interface CardLayoutProps {
+  children: ReactElement[]
+}
 
 const CardLayout = ({ children }: CardLayoutProps) => (
   <Card>
