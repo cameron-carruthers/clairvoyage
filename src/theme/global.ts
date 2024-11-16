@@ -17,6 +17,8 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 16px;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
   }
 
   *, *:before, *:after {
@@ -26,10 +28,13 @@ export const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
     font-family: Open Sans, sans-serif;
     background: linear-gradient(300deg,${primaryLight},${secondaryLight},${primaryLight});
     background-size: 180% 180%;
-    background-position: fixed;
+    background-attachment: fixed;
+    background-position: center;
     animation: ${GradientAnimation} 18s ease infinite;
     overflow-x: hidden;
   }
