@@ -27,9 +27,7 @@ const MainContent = styled.div`
 `
 
 const MainMobileContent = styled.div`
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  flex-basis: 80vw;
+  padding: 56px 32px;
 `;
 
 const LeftSidebarLayout = styled(SidebarLayout)`
