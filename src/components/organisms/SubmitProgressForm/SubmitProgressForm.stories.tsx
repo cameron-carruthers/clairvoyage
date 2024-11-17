@@ -1,16 +1,16 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import SubmitProgressForm from '.';
 
-export default {
+const meta = {
   title: 'Organisms/SubmitProgressForm',
-  component: SubmitProgressForm
-} as ComponentMeta<typeof SubmitProgressForm>;
+  component: SubmitProgressForm,
+} satisfies Meta<typeof SubmitProgressForm>;
 
-const Template: ComponentStory<typeof SubmitProgressForm> = (args) => <SubmitProgressForm  {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
-Default.args = {
-  currentWeek: 9
-}
+export const Default: Story = {
+  args: {
+    currentWeek: 9
+  },
+};

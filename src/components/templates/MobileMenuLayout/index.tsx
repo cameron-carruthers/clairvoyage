@@ -8,7 +8,7 @@ interface MenuProps {
 
 interface MobileMenuLayoutProps {
   open: boolean
-  children: ReactElement
+  children?: ReactElement
 }
 
 const Menu = styled(SidebarLayout)<MenuProps>`

@@ -1,120 +1,118 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
+import NavSection from '.';
 import { calculateTertiaryColor, secondaryColor } from '../../../theme';
 
-import NavSection from '.';
-
-export default {
+const meta = {
   title: 'Organisms/NavSection',
-  component: NavSection
-} as ComponentMeta<typeof NavSection>;
+  component: NavSection,
+  globals: {
+    backgrounds: { value: 'light' },
+  },
+} satisfies Meta<typeof NavSection>;
 
-const Template: ComponentStory<typeof NavSection> = (args) => <NavSection  {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Projects = Template.bind({});
-Projects.args = {
-  navHeader: 'Projects',
-  navItems: [
-    {
-      id: '1',
-      icon: {
-        name: 'video',
-        color: calculateTertiaryColor(0)
+export const Projects: Story = {
+  args: {
+    navHeader: 'Projects',
+    navItems: [
+      {
+        id: '1',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Blaine'
+      }, 
+      {
+        id: '2',
+        icon: {
+          name: 'laptop',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Cameron'
       },
-      name: 'Blaine'
-    }, 
-    {
-      id: '2',
-      icon: {
-        name: 'laptop',
-        color: calculateTertiaryColor(0)
+      {
+        id: '3',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Colby'
       },
-      name: 'Cameron'
-    },
-    {
-      id: '3',
-      icon: {
-        name: 'music',
-        color: calculateTertiaryColor(0)
+      {
+        id: '4',
+        icon: {
+          name: 'music',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Collin'
       },
-      name: 'Colby'
-    },
-    {
-      id: '4',
-      icon: {
-        name: 'music',
-        color: calculateTertiaryColor(0)
+      {
+        id: '5',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Ian'
       },
-      name: 'Collin'
-    },
-    {
-      id: '5',
-      icon: {
-        name: 'video',
-        color: calculateTertiaryColor(0)
+      {
+        id: '6',
+        icon: {
+          name: 'picture',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Johnny'
       },
-      name: 'Ian'
-    },
-    {
-      id: '6',
-      icon: {
-        name: 'picture',
-        color: calculateTertiaryColor(0)
+      {
+        id: '7',
+        icon: {
+          name: 'edit',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Kyle'
       },
-      name: 'Johnny'
-    },
-    {
-      id: '7',
-      icon: {
-        name: 'edit',
-        color: calculateTertiaryColor(0)
+      {
+        id: '8',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Ryan'
       },
-      name: 'Kyle'
-    },
-    {
-      id: '8',
-      icon: {
-        name: 'video',
-        color: calculateTertiaryColor(0)
-      },
-      name: 'Ryan'
-    },
-    {
-      id: '9',
-      icon: {
-        name: 'video',
-        color: calculateTertiaryColor(0)
-      },
-      name: 'Sydney'
-    }
-  ]
-}
-Projects.parameters = {
-  backgrounds: { default: 'light' }
+      {
+        id: '9',
+        icon: {
+          name: 'video',
+          color: calculateTertiaryColor(0)
+        },
+        name: 'Sydney'
+      }
+    ]
+  },
 };
 
-export const Channels = Template.bind({});
-Channels.args = {
-  navHeader: 'Channels',
-  navItems: [
-    {
-      id: '1',
-      icon: {
-        name: 'chat',
-        color: secondaryColor
+export const Channels: Story = {
+  args: {
+    navHeader: 'Channels',
+    navItems: [
+      {
+        id: '1',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
+        name: 'General'
       },
-      name: 'General'
-    },
-    {
-      id: '2',
-      icon: {
-        name: 'chat',
-        color: secondaryColor
-      },
-      name: 'Inspiration'
-    }
-  ]
-}
-Channels.parameters = {
-  backgrounds: { default: 'light' }
+      {
+        id: '2',
+        icon: {
+          name: 'chat',
+          color: secondaryColor
+        },
+        name: 'Inspiration'
+      }
+    ]
+  },
 };

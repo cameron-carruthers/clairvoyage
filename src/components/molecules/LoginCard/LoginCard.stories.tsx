@@ -1,13 +1,14 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import LoginForm from '.';
+import { fn } from '@storybook/test';
 
-export default {
+const meta = {
   title: 'Molecules/LoginForm',
-  component: LoginForm
-} as ComponentMeta<typeof LoginForm>;
+  component: LoginForm,
+  args: { onSubmit: fn() },
+} satisfies Meta<typeof LoginForm>;
 
-const Template: ComponentStory<typeof LoginForm> = () => <LoginForm />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
+export const Default: Story = {};

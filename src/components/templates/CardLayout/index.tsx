@@ -14,7 +14,7 @@ const Card = styled.section`
 `;
 
 interface CardLayoutProps {
-  children: ReactElement[]
+  children?: ReactElement[]
 }
 
 const CardLayout = ({ children }: CardLayoutProps) => (

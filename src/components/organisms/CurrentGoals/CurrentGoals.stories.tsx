@@ -1,20 +1,20 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import CurrentGoals from '.';
 
-export default {
+const meta = {
   title: 'Organisms/CurrentGoals',
-  component: CurrentGoals
-} as ComponentMeta<typeof CurrentGoals>;
+  component: CurrentGoals,
+  globals: {
+    backgrounds: { value: 'light' },
+  },
+} satisfies Meta<typeof CurrentGoals>;
 
-const Template: ComponentStory<typeof CurrentGoals> = (args) => <CurrentGoals  {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
-Default.args = {
-  learningGoal: 'Watch first section of Typography course on Frontend Masters and read Typography chapter in Design for Hackers',
-  creativeGoal: 'Create design system (Color scheme, typography, buttons) and add wireframes for other parts of the site'
-}
-Default.parameters = {
-  backgrounds: { default: 'light' }
+export const Default: Story = {
+  args: {
+    learningGoal: 'Watch first section of Typography course on Frontend Masters and read Typography chapter in Design for Hackers',
+    creativeGoal: 'Create design system (Color scheme, typography, buttons) and add wireframes for other parts of the site'
+  },
 };

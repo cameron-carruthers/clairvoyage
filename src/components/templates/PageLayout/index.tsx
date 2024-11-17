@@ -43,9 +43,9 @@ const RightSidebarLayout = styled(SidebarLayout)`
 `
 
 interface PageLayoutProps {
-  leftSidebar: ReactElement
-  rightSidebar: ReactElement
-  children: ReactElement
+  leftSidebar?: ReactElement
+  rightSidebar?: ReactElement
+  children?: ReactElement
 }
 
 const PageLayout = ({ leftSidebar, rightSidebar, children }: PageLayoutProps) => {

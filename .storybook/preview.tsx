@@ -14,6 +14,14 @@ const preview: Preview = {
       )
     }
   ],
+  parameters: {
+    backgrounds: {
+      options: {
+        dark: { name: 'Dark', value: '#333' },
+        light: { name: 'Light', value: '#F7F9F2' },
+      },
+    },
+  },
 };
 
 export default preview;

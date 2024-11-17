@@ -1,20 +1,16 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import Button from '.';
 
-export default {
+const meta = {
   title: 'Atoms/Button',
-  component: Button
-} as ComponentMeta<typeof Button>;
+  component: Button,
+  args: { text: 'Submit' },
+  globals: {
+    backgrounds: { value: 'light' },
+  },
+} satisfies Meta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
-
-Default.args = {
-  text: 'Submit',
-};
-Default.parameters = {
-  backgrounds: { default: 'light' }
-};
+export const Default: Story = {};

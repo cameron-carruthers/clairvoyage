@@ -1,38 +1,34 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import WeeklyStatus from '.';
 
-export default {
+const meta = {
   title: 'Molecules/WeeklyStatus',
-  component: WeeklyStatus
-} as ComponentMeta<typeof WeeklyStatus>;
+  component: WeeklyStatus,
+  globals: {
+    backgrounds: { value: 'light' },
+  },
+} satisfies Meta<typeof WeeklyStatus>;
 
-const Template: ComponentStory<typeof WeeklyStatus> = (args) => <WeeklyStatus  {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Success = Template.bind({});
-Success.args = {
-  week: 1,
-  status: 'success'
-}
-Success.parameters = {
-  backgrounds: { default: 'light' }
+export const Success: Story = {
+  args: {
+    week: 1,
+    status: 'success'
+  },
 };
 
-export const Fail = Template.bind({});
-Fail.args = {
-  week: 2,
-  status: 'fail'
-}
-Fail.parameters = {
-  backgrounds: { default: 'light' }
+export const Fail: Story = {
+  args: {
+    week: 2,
+    status: 'fail'
+  },
 };
 
-export const Incomplete = Template.bind({});
-Incomplete.args = {
-  week: 3,
-  status: 'incomplete'
-}
-Incomplete.parameters = {
-  backgrounds: { default: 'light' }
+export const Incomplete: Story = {
+  args: {
+    week: 3,
+    status: 'incomplete'
+  },
 };

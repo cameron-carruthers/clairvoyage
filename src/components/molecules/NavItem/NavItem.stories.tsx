@@ -1,48 +1,44 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
+import NavItem from '.';
 import { calculateTertiaryColor, secondaryColor } from '../../../theme';
 
-import NavItem from '.';
-
-export default {
+const meta = {
   title: 'Molecules/NavItem',
-  component: NavItem
-} as ComponentMeta<typeof NavItem>;
-
-const Template: ComponentStory<typeof NavItem> = (args) => <NavItem  {...args} />;
-
-export const BlaineVideoEditing = Template.bind({});
-BlaineVideoEditing.args = {
-  icon: {
-    name: 'video',
-    color: calculateTertiaryColor(0)
+  component: NavItem,
+  globals: {
+    backgrounds: { value: 'light' },
   },
-  name: 'Blaine'
-}
-BlaineVideoEditing.parameters = {
-  backgrounds: { default: 'light' }
+} satisfies Meta<typeof NavItem>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const BlaineVideoEditing: Story = {
+  args: {
+    icon: {
+      name: 'video',
+      color: calculateTertiaryColor(0)
+    },
+    name: 'Blaine'
+  },
 };
 
-export const CameronWebDevelopment = Template.bind({});
-CameronWebDevelopment.args = {
-  icon: {
-    name: 'laptop',
-    color: calculateTertiaryColor(0)
+export const CameronWebDevelopment: Story = {
+  args: {
+    icon: {
+      name: 'laptop',
+      color: calculateTertiaryColor(0)
+    },
+    name: 'Cameron'
   },
-  name: 'Cameron'
-}
-CameronWebDevelopment.parameters = {
-  backgrounds: { default: 'light' }
 };
 
-export const GeneralChannel = Template.bind({});
-GeneralChannel.args = {
-  icon: {
-    name: 'chat',
-    color: secondaryColor
+export const GeneralChannel: Story = {
+  args: {
+    icon: {
+      name: 'chat',
+      color: secondaryColor
+    },
+    name: 'General'
   },
-  name: 'General'
-}
-GeneralChannel.parameters = {
-  backgrounds: { default: 'light' }
 };

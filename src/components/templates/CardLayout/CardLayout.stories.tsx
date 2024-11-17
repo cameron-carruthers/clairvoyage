@@ -1,13 +1,12 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import CardLayout from '.';
 
-export default {
+const meta = {
   title: 'Templates/CardLayout',
-  component: CardLayout
-} as ComponentMeta<typeof CardLayout>;
+  component: CardLayout,
+} satisfies Meta<typeof CardLayout>;
 
-const Template: ComponentStory<typeof CardLayout> = () => <CardLayout />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Default = Template.bind({});
+export const Default: Story = {};
