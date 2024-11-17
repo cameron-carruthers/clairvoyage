@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStyle } from '../src/theme';
+import { GlobalStyle } from '../app/theme';
 
 import type { Preview } from '@storybook/react';
 

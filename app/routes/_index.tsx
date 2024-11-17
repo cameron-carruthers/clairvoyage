@@ -1,9 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
-import LeftSidebarContent from "../../src/components/organisms/LeftSidebarContent";
-import RightSidebarContent from "../../src/components/organisms/RightSidebarContent";
-import SubmitProgressForm from "../../src/components/organisms/SubmitProgressForm";
-import PageLayout from "../../src/components/templates/PageLayout";
-import { calculateTertiaryColor, secondaryColor } from "src/theme";
+import LeftSidebarContent from "../components/organisms/LeftSidebarContent";
+import RightSidebarContent from "../components/organisms/RightSidebarContent";
+import SubmitProgressForm from "../components/organisms/SubmitProgressForm";
+import PageLayout from "../components/templates/PageLayout";
+import { calculateTertiaryColor, secondaryColor } from "~/theme";
 
 export const meta: MetaFunction = () => {
   return [
