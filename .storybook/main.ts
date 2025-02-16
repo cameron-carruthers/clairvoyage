@@ -2,7 +2,7 @@ import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   stories: [
-    "../app/components/**/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/components/**/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
     "@storybook/addon-onboarding",
@@ -12,11 +12,7 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/react-vite",
-    options: {
-      builder: {
-        viteConfigPath: 'sb-vite.config.ts',
-      },
-    },
+    options: {},
   },
   features: {
     backgroundsStoryGlobals: true,

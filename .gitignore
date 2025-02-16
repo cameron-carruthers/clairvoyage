@@ -1,8 +1,21 @@
-node_modules
-
-/.cache
-/build
-/public/build
+# Local
+.DS_Store
+*.local
+*.log*
 .env
+
+# Dist
+node_modules
+dist/
+.vinxi
+.output
+.vercel
+.netlify
+.wrangler
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
 
 storybook-static

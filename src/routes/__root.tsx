@@ -1,16 +1,14 @@
-import type { MetaFunction } from "@remix-run/node";
+import { createRootRoute } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import LeftSidebarContent from "../components/organisms/LeftSidebarContent";
 import RightSidebarContent from "../components/organisms/RightSidebarContent";
 import SubmitProgressForm from "../components/organisms/SubmitProgressForm";
 import PageLayout from "../components/templates/PageLayout";
-import { calculateTertiaryColor, secondaryColor } from "~/theme";
+import { calculateTertiaryColor, GlobalStyle, secondaryColor } from "../theme";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Clairvoyage" },
-    { name: "description", content: "A 12 week journey for creators" },
-  ];
-};
+export const Route = createRootRoute({
+  component: RootComponent,
+})
 
 const projects = [
   {
@@ -162,23 +160,27 @@ const weeklyStatuses = [
   }
 ]
 
-export default function Index() {
+function RootComponent() {
   return (
-    <PageLayout 
-      leftSidebar={
-        <LeftSidebarContent 
-          projects={projects}
-          channels={channels}
-        />
-      }
-      rightSidebar={
-        <RightSidebarContent
-          goals={goals}
-          weeklyStatuses={weeklyStatuses}
-        />
-      }
-    >
-      <SubmitProgressForm currentWeek={9} />
-    </PageLayout>
-  );
+    <>
+      <PageLayout 
+        leftSidebar={
+          <LeftSidebarContent 
+            projects={projects}
+            channels={channels}
+          />
+        }
+        rightSidebar={
+          <RightSidebarContent
+            goals={goals}
+            weeklyStatuses={weeklyStatuses}
+          />
+        }
+      >
+        <SubmitProgressForm currentWeek={9} />
+      </PageLayout>
+      <GlobalStyle />
+      <TanStackRouterDevtools position="bottom-right" />
+    </>
+  )
 }
