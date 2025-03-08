@@ -1,2 +1,2 @@
-export const iconHeight = 40;
-export const iconWidth = 40;
+export const iconHeight = 24;
+export const iconWidth = 24;

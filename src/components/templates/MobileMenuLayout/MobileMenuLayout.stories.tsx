@@ -59,7 +59,7 @@ export const Open: Story = {
         {
           id: '6',
           icon: {
-            name: 'picture',
+            name: 'image',
             color: calculateTertiaryColor(0)
           },
           name: 'Johnny'
@@ -67,7 +67,7 @@ export const Open: Story = {
         {
           id: '7',
           icon: {
-            name: 'edit',
+            name: 'pen',
             color: calculateTertiaryColor(0)
           },
           name: 'Kyle'
@@ -143,7 +143,7 @@ export const Closed: Story = {
         {
           id: '6',
           icon: {
-            name: 'picture',
+            name: 'image',
             color: calculateTertiaryColor(0)
           },
           name: 'Johnny'
@@ -151,7 +151,7 @@ export const Closed: Story = {
         {
           id: '7',
           icon: {
-            name: 'edit',
+            name: 'pen',
             color: calculateTertiaryColor(0)
           },
           name: 'Kyle'

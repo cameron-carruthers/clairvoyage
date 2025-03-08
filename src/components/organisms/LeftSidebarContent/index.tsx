@@ -20,7 +20,7 @@ interface Icon {
 
 const LeftSidebarContent = ({ projects, channels }: LeftSidebarContentProps) => (
   <nav>
-    <NavItem icon={{ name: 'home', color: secondaryColor }} name='Home' />
+    <NavItem icon={{ name: 'house', color: secondaryColor }} name='Home' />
     <NavSection navHeader='Projects' navItems={projects} />
     <NavSection navHeader='Channels' navItems={channels} />
   </nav>

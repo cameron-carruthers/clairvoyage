@@ -32,13 +32,19 @@ interface Icon {
   color: string
 }
 
+const StyledSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
 const NavSection = ({ navItems, navHeader }: NavSectionProps) => (
-  <section>
+  <StyledSection>
     <NavHeader>{navHeader}</NavHeader>
     {navItems.map(({ id, icon, name }) => (
       <NavItem key={id} icon={icon} name={name} />
     ))}
-  </section>
+  </StyledSection>
 )
 
 export default NavSection;

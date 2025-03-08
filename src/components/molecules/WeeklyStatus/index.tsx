@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { mediumText, successColor, failColor, textColor } from '../../../theme';
-import Icon from '../../atoms/Icon';
+import Icon from '../../Icon';
 
 const Container = styled.div`
   display: flex;
@@ -26,22 +26,28 @@ interface WeeklyStatusProps {
 
 const WeeklyStatus = ({ week, status }: WeeklyStatusProps) => {
   let color;
+  let iconName;
+
   if (status === 'success') {
-    color = successColor
+    color = successColor;
+    iconName = 'circle-check';
   } else if (status === 'fail') {
-    color = failColor
+    color = failColor;
+    iconName = 'circle-x';
   } else {
     color = textColor
+    iconName = 'circle';
   }
+
   return ( 
     <Container>
       <Week>{week}</Week>
       <Icon 
-        iconName={status} 
+        iconName={iconName} 
         color={color}
       />
     </Container>
   )
-  }
+}
 
 export default WeeklyStatus;

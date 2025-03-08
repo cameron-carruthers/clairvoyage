@@ -21,7 +21,7 @@ interface WeeklyStatus {
 
 const RightSidebarContent = ({ weeklyStatuses, handleLogout }: RightSidebarContentProps ) => (
   <>
-    <NavItem icon={{ name: 'logout', color: secondaryColor }} name='Logout' onClick={handleLogout} />
+    <NavItem icon={{ name: 'log-out', color: secondaryColor }} name='Logout' onClick={handleLogout} />
     <SeasonProgress weeklyStatuses={weeklyStatuses}/>
   </>
 )

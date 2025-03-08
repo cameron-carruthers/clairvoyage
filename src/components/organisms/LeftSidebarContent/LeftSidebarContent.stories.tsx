@@ -59,7 +59,7 @@ export const Default: Story = {
       {
         id: '6',
         icon: {
-          name: 'picture',
+          name: 'image',
           color: calculateTertiaryColor(0)
         },
         name: 'Johnny'
@@ -67,7 +67,7 @@ export const Default: Story = {
       {
         id: '7',
         icon: {
-          name: 'edit',
+          name: 'pen',
           color: calculateTertiaryColor(0)
         },
         name: 'Kyle'
