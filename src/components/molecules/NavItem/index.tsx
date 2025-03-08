@@ -38,10 +38,11 @@ interface Icon {
 interface NavItemProps {
   icon: Icon
   name: string
+  onClick: () => void
 }
 
-const NavItem = ({ icon, name }: NavItemProps) => (
-  <Container>
+const NavItem = ({ icon, name, onClick }: NavItemProps) => (
+  <Container onClick={onClick}>
     <Icon iconName={icon.name} color={icon.color} />
     <Name>{name}</Name>
   </Container>

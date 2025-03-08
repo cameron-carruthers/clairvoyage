@@ -1,9 +1,12 @@
+import { secondaryColor } from '../../../theme';
+import NavItem from '../../molecules/NavItem';
 import CurrentGoals from '../CurrentGoals';
 import SeasonProgress from '../SeasonProgress';
 
 interface RightSidebarContentProps {
   goals: CurrentGoals,
   weeklyStatuses: WeeklyStatus[]
+  handleLogout: () => void
 }
 
 interface CurrentGoals {
@@ -16,12 +19,9 @@ interface WeeklyStatus {
   status: string
 }
 
-const RightSidebarContent = ({ goals, weeklyStatuses }: RightSidebarContentProps ) => (
+const RightSidebarContent = ({ weeklyStatuses, handleLogout }: RightSidebarContentProps ) => (
   <>
-    <CurrentGoals 
-      learningGoal={goals.learningGoal}
-      creativeGoal={goals.creativeGoal}
-    />
+    <NavItem icon={{ name: 'logout', color: secondaryColor }} name='Logout' onClick={handleLogout} />
     <SeasonProgress weeklyStatuses={weeklyStatuses}/>
   </>
 )

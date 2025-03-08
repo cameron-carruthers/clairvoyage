@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
 import { AuthProvider, useAuth } from './auth'
+import { GlobalStyle } from './theme'
 
 // Set up a Router instance
 const router = createRouter({

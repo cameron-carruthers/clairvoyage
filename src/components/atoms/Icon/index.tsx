@@ -1,5 +1,5 @@
 import { iconHeight, iconWidth } from '../../../theme';
-import Chat from '../icons/Chat';
+import MessageCircle from '../icons/MessageCircle';
 import Edit from '../icons/Edit';
 import Fail from '../icons/Fail';
 import Home from '../icons/Home';
@@ -9,6 +9,7 @@ import Music from '../icons/Music';
 import Picture from '../icons/Picture';
 import Success from '../icons/Success';
 import Video from '../icons/Video';
+import Logout from '../icons/Logout';
 
 interface IconProps {
   iconName: string
@@ -72,8 +73,14 @@ const Icon = ({ iconName, color }: IconProps) => {
         height={iconHeight}
         color={color}
       />;
+    case 'logout':
+      return <Logout
+        width={iconWidth}
+        height={iconHeight}
+        color={color}
+      />
     default:
-      return <Chat 
+      return <MessageCircle 
         width={iconWidth}
         height={iconHeight}
         color={color}

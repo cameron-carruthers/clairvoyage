@@ -1,9 +1,14 @@
-import { createFileRoute, redirect } from '@tanstack/react-router'
+import {
+  createFileRoute,
+  redirect,
+  useRouter,
+} from '@tanstack/react-router';
 import LeftSidebarContent from "../../components/organisms/LeftSidebarContent";
 import RightSidebarContent from "../../components/organisms/RightSidebarContent";
 import SubmitProgressForm from "../../components/organisms/SubmitProgressForm";
 import PageLayout from "../../components/templates/PageLayout";
 import { calculateTertiaryColor, secondaryColor } from "../../theme";
+import { useAuth } from '../../auth'
 
 export const Route = createFileRoute('/_auth/')({
   beforeLoad: ({ context, location }) => {
@@ -170,6 +175,17 @@ const weeklyStatuses = [
 ]
 
 function AuthLayout() {
+  const router = useRouter()
+  const navigate = Route.useNavigate()
+  const auth = useAuth()
+
+  const handleLogout = () => {
+    auth.logout()
+    router.invalidate().finally(() => {
+      navigate({ to: '/login' })
+    })
+  }
+
   return (
     <PageLayout 
       leftSidebar={
@@ -182,6 +198,7 @@ function AuthLayout() {
         <RightSidebarContent
           goals={goals}
           weeklyStatuses={weeklyStatuses}
+          handleLogout={handleLogout}
         />
       }
     >
