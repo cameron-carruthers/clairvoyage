@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { calculateTertiaryColor } from '../../../theme';
+import { tertiaryColor } from '~/theme';
 
 interface ContainerProps {
   open: boolean;
@@ -32,7 +32,7 @@ const Container = styled.button<ContainerProps>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${calculateTertiaryColor(0)};
+    background: ${tertiaryColor};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

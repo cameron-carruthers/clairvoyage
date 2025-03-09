@@ -1,29 +1,38 @@
-import NavItem from '../../molecules/NavItem';
-import NavSection from '../NavSection';
-import { secondaryColor } from '../../../theme';
+import type { NavItemProps } from '~/components/Nav';
+import { secondaryColor } from '~/theme';
+import { Nav } from '~/components/Nav';
+import styled from 'styled-components';
 
 interface LeftSidebarContentProps {
-  projects: NavItem[],
-  channels: NavItem[]
+  projects: NavItemProps[];
+  channels: NavItemProps[];
 }
 
-interface NavItem {
-  id: string,
-  icon: Icon,
-  name: string
-}
-
-interface Icon {
-  name: string
-  color: string
-}
+const MainNavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
 
 const LeftSidebarContent = ({ projects, channels }: LeftSidebarContentProps) => (
-  <nav>
-    <NavItem icon={{ name: 'house', color: secondaryColor }} name='Home' />
-    <NavSection navHeader='Projects' navItems={projects} />
-    <NavSection navHeader='Channels' navItems={channels} />
-  </nav>
+  <Nav justify="space-between">
+    <MainNavContainer>
+      <Nav.Item icon={{ name: 'house', color: secondaryColor }} name='Home' id='123' />
+      <Nav.Section>
+        <Nav.Header>Projects</Nav.Header>
+        {projects.map((project) => (
+          <Nav.Item key={project.id} name={project.name} id={project.id} icon={project.icon}></Nav.Item>
+        ))}
+      </Nav.Section>
+      <Nav.Section>
+        <Nav.Header>Channels</Nav.Header>
+        {channels.map((channel) => (
+          <Nav.Item key={channel.id} name={channel.name} id={channel.id} icon={channel.icon}></Nav.Item>
+        ))}
+      </Nav.Section>
+    </MainNavContainer>
+    <Nav.Item icon={{ name: 'log-out', color: secondaryColor }} name='Logout' id='123' />
+  </Nav>
 )
 
 export default LeftSidebarContent;

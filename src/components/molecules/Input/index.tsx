@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { formInputText, mediumText, calculateTertiaryColor } from '../../../theme';
+import { formInputText, mediumText, tertiaryColor } from '~/theme';
 
 interface LabelProps {
   label: string
@@ -29,7 +29,7 @@ const TextArea = styled.textarea`
   margin-bottom: 1rem;
 
   &:focus, &:active {
-    outline-color: ${calculateTertiaryColor(0)};
+    outline-color: ${tertiaryColor};
   }
 
   @media (max-width: 600px) {

@@ -1,5 +1,5 @@
 import { secondaryColor } from '../../../theme';
-import NavItem from '../../molecules/NavItem';
+import { NavItem } from '../../Nav/NavItem';
 import CurrentGoals from '../CurrentGoals';
 import SeasonProgress from '../SeasonProgress';
 
@@ -21,7 +21,7 @@ interface WeeklyStatus {
 
 const RightSidebarContent = ({ weeklyStatuses, handleLogout }: RightSidebarContentProps ) => (
   <>
-    <NavItem icon={{ name: 'log-out', color: secondaryColor }} name='Logout' onClick={handleLogout} />
+    <NavItem icon={{ name: 'log-out', color: secondaryColor }} name='Logout' id='123' onClick={handleLogout} />
     <SeasonProgress weeklyStatuses={weeklyStatuses}/>
   </>
 )

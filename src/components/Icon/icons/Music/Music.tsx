@@ -7,9 +7,9 @@ export const Music = ({ width, height, color }: IconSvgProps) => (
     viewBox="0 0 24 24"
     fill="none"
     stroke={color}
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="lucide lucide-music"
   >
     <path d="M9 18V5l12-2v13"/>

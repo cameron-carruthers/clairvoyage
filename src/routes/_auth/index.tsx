@@ -7,7 +7,7 @@ import LeftSidebarContent from "../../components/organisms/LeftSidebarContent";
 import RightSidebarContent from "../../components/organisms/RightSidebarContent";
 import SubmitProgressForm from "../../components/organisms/SubmitProgressForm";
 import PageLayout from "../../components/templates/PageLayout";
-import { calculateTertiaryColor, secondaryColor } from "../../theme";
+import { tertiaryColor, secondaryColor } from "../../theme";
 import { useAuth } from '../../auth'
 
 export const Route = createFileRoute('/_auth/')({
@@ -29,7 +29,7 @@ const projects = [
     id: '1',
     icon: {
       name: 'video',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Blaine'
   }, 
@@ -37,7 +37,7 @@ const projects = [
     id: '2',
     icon: {
       name: 'laptop',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Cameron'
   },
@@ -45,7 +45,7 @@ const projects = [
     id: '3',
     icon: {
       name: 'music',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Colby'
   },
@@ -53,7 +53,7 @@ const projects = [
     id: '4',
     icon: {
       name: 'music',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Collin'
   },
@@ -61,7 +61,7 @@ const projects = [
     id: '5',
     icon: {
       name: 'video',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Ian'
   },
@@ -69,7 +69,7 @@ const projects = [
     id: '6',
     icon: {
       name: 'image',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Johnny'
   },
@@ -77,7 +77,7 @@ const projects = [
     id: '7',
     icon: {
       name: 'pen',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Kyle'
   },
@@ -85,7 +85,7 @@ const projects = [
     id: '8',
     icon: {
       name: 'video',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Ryan'
   },
@@ -93,7 +93,7 @@ const projects = [
     id: '9',
     icon: {
       name: 'video',
-      color: calculateTertiaryColor(0)
+      color: tertiaryColor
     },
     name: 'Sydney'
   }

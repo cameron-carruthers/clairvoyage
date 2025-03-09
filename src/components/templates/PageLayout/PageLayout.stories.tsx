@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import PageLayout from '.';
 import RightSidebarContent from '../../organisms/RightSidebarContent';
 import LeftSidebarContent from '../../organisms/LeftSidebarContent';
-import { calculateTertiaryColor, secondaryColor } from '../../../theme';
+import { tertiaryColor, secondaryColor } from '../../../theme';
 
 const meta = {
   title: 'Templates/PageLayout',
@@ -22,7 +22,7 @@ export const WithSidebarContent: Story = {
           id: '1',
           icon: {
             name: 'video',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Blaine'
         }, 
@@ -30,7 +30,7 @@ export const WithSidebarContent: Story = {
           id: '2',
           icon: {
             name: 'laptop',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Cameron'
         },
@@ -38,7 +38,7 @@ export const WithSidebarContent: Story = {
           id: '3',
           icon: {
             name: 'music',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Colby'
         },
@@ -46,7 +46,7 @@ export const WithSidebarContent: Story = {
           id: '4',
           icon: {
             name: 'music',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Collin'
         },
@@ -54,7 +54,7 @@ export const WithSidebarContent: Story = {
           id: '5',
           icon: {
             name: 'video',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Ian'
         },
@@ -62,7 +62,7 @@ export const WithSidebarContent: Story = {
           id: '6',
           icon: {
             name: 'image',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Johnny'
         },
@@ -70,7 +70,7 @@ export const WithSidebarContent: Story = {
           id: '7',
           icon: {
             name: 'pen',
-            color: calculateTertiaryColor(0)
+            color: tertiaryColor
           },
           name: 'Kyle'
         }

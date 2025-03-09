@@ -1,13 +1,9 @@
 import { styled } from 'styled-components';
-import { primaryFont, calculateTertiaryColor } from '../../../theme';
+import { primaryFont, tertiaryColor, tertiaryHover } from '../../../theme';
 
 const ButtonStyle = styled.button`
   padding: 0.5rem 2rem;
-  background: linear-gradient(
-    85.69deg,
-    ${calculateTertiaryColor(-5)} 0%,
-    ${calculateTertiaryColor(5)} 100%
-  );
+  background: ${tertiaryColor};
   border-radius: 6.25rem;
   font-family: ${primaryFont};
   font-weight: bold;
@@ -19,12 +15,12 @@ const ButtonStyle = styled.button`
   transition: background-color 0.2s linear, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 
   &:hover, &:focus, &:active {
-    background: linear-gradient(85.69deg, ${calculateTertiaryColor(-10)} 0%, ${calculateTertiaryColor(0)} 100%);
+    background: ${tertiaryHover};
     transform: translateY(-2px);
   }
 
   &:focus {
-    outline: 2px solid ${calculateTertiaryColor(0)};
+    outline: 2px solid ${tertiaryColor};
     outline-offset: 2px;
   }
 

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Icon from '.';
 import { 
-  calculateTertiaryColor,
+  tertiaryColor,
   secondaryColor,
   successColor,
   textColor,
@@ -50,41 +50,41 @@ export const Fail: Story = {
 export const Edit: Story = {
   args: {
     iconName: 'pen',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
 
 export const Home: Story = {
   args: {
     iconName: 'house',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
 
 export const Laptop: Story = {
   args: {
     iconName: 'laptop',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
 
 export const Music: Story = {
   args: {
     iconName: 'music',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
 
 export const Picture: Story = {
   args: {
     iconName: 'image',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
 
 export const Video: Story = {
   args: {
     iconName: 'video',
-    color: calculateTertiaryColor(0)
+    color: tertiaryColor
   },
 };
