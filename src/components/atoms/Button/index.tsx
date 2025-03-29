@@ -7,7 +7,7 @@ const ButtonStyle = styled.button`
   border-radius: 6.25rem;
   font-family: ${primaryFont};
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #fff;
   border: none;
