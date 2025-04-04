@@ -4,6 +4,8 @@ import { GlobalStyle } from "../theme";
 
 import type { AuthContext } from '../auth'
 
+import "~/styles/global.css"
+
 interface MyRouterContext {
   auth: AuthContext
 }

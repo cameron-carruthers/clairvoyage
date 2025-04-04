@@ -1,0 +1,85 @@
+:root {
+  /* Fonts */
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Sofia', sans-serif;
+
+  /* Font Sizes */
+  --heading-one-font-size-desktop: 3.75rem;
+  --heading-one-font-size-mobile: 2rem;
+  --heading-two-font-size-desktop: 3rem;
+  --heading-two-font-size-mobile: 1.75rem;
+  --heading-three-font-size-desktop: 2rem;
+  --heading-three-font-size-mobile: 1.25rem;
+  --navigation-heading-font-size: 1.5rem;
+  --form-input-font-size-desktop: 1.5rem;
+  --form-input-font-size-mobile: 1rem;
+  --username-font-size-desktop: 1.25rem;
+  --username-font-size-mobile: 1rem;
+  --body-intro-font-size: 1rem;
+  --medium-text-font-size: 1rem;
+  --small-text-font-size: 0.75rem;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Colors */
+  --color-text: #2D255E;
+  --color-success: #00DC9B;
+  --color-fail: #BE00AC;
+
+  --color-primary-50: #E1F8FC;
+  --color-primary-100: #B4EEF8;
+  --color-primary-200: #83E3F3;
+  --color-primary-300: #53D6ED;
+  --color-primary-400: #31CDE7;
+  --color-primary-500: #1EC4E2;
+  --color-primary-600: #1AB4CF;
+  --color-primary-700: #149FB4;
+  --color-primary-800: #108B9B;
+  --color-primary-900: #07676F;
+
+  --color-secondary-50: #F0EDFD;
+  --color-secondary-100: #D8D2FA;
+  --color-secondary-200: #BEB4F8;
+  --color-secondary-300: #A394F5;
+  --color-secondary-400: #8B7BF0;
+  --color-secondary-500: #7464EB;
+  --color-secondary-600: #695EE4;
+  --color-secondary-700: #5955D9;
+  --color-secondary-800: #4C4FD1;
+  --color-secondary-900: #3443C2;
+
+  --color-tertiary-50: #FDE1F8;
+  --color-tertiary-100: #F8B4EE;
+  --color-tertiary-200: #EC83DD;
+  --color-tertiary-300: #DA4FC9;
+  --color-tertiary-400: #CC15BA;
+  --color-tertiary-500: #BE00AC;
+  --color-tertiary-600: #B000A8;
+  --color-tertiary-700: #9C00A2;
+  --color-tertiary-800: #8B009B;
+  --color-tertiary-900: #6B0090;
+
+  --color-primary: var(--color-primary-500);
+  --color-primary-light: var(--color-primary-100);
+  --color-secondary: var(--color-secondary-500);
+  --color-secondary-light: var(--color-secondary-200);
+  --color-secondary-hover: var(--color-secondary-50);
+  --color-tertiary: var(--color-tertiary-500);
+  --color-tertiary-hover: var(--color-tertiary-600);
+
+  /* Icons */
+  --icon-height: 24px;
+  --icon-width: 24px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --heading-one-font-size: var(--heading-one-font-size-mobile);
+    --heading-two-font-size: var(--heading-two-font-size-mobile);
+    --heading-three-font-size: var(--heading-three-font-size-mobile);
+    --form-input-font-size: var(--form-input-font-size-mobile);
+    --username-font-size: var(--username-font-size-mobile);
+  }
+}

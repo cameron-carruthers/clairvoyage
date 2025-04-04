@@ -1,37 +1,7 @@
-import { styled } from 'styled-components';
-import { mediumText, secondaryHover } from '~/theme';
 import Icon from '../Icon';
 import { Link } from '@tanstack/react-router';
 
-const Container = styled.li`
-  list-style-type: none;
-`
-
-const User = styled.div`
-  display: flex;
-  align-items: center;
-  border-radius: 1rem;
-  padding: 0.25rem 0.5rem;
-  margin: -0.25rem -0.5rem;
-  gap: 1rem;
-
-  &:hover {
-    background: ${secondaryHover};
-    cursor: pointer;
-  }
-`
-
-const Name = styled.span`
-  font-family: ${mediumText.fontFamily};
-  font-size: ${mediumText.fontSize.desktop};
-  font-weight: ${mediumText.fontWeight};
-  color: ${mediumText.color};
-  line-height: 0;
-
-  @media (max-width: 600px) {
-    font-size: ${mediumText.fontSize.mobile};
-  }
-`
+import styles from './Nav.module.css';
 
 interface Icon {
   name: string;
@@ -47,16 +17,16 @@ export interface NavItemProps {
 
 export function NavItem({ icon, name, id, onClick }: NavItemProps) {
   return (
-    <Container onClick={onClick}>
+    <li className={styles["nav-item"]} onClick={onClick}>
       <Link
         to="/$id"
         params={{ id }}
       >
-        <User>
+        <div className={styles["nav-item-user"]}>
           <Icon iconName={icon.name} color={icon.color} />
-          <Name>{name}</Name>
-        </User>
+          <span className={styles["nav-item-name"]}>{name}</span>
+        </div>
       </Link>
-    </Container>
+    </li>
   )
 }

@@ -1,20 +1,15 @@
-import { styled } from 'styled-components';
 import { ReactNode } from 'react';
+
+import styles from './Nav.module.css';
 
 interface NavSectionProps {
   children: ReactNode;
 }
 
-const StyledSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
 export function NavSection({ children }: NavSectionProps) {
   return (
-    <StyledSection>
+    <section className={styles["nav-section"]}>
       {children}
-    </StyledSection>
+    </section>
   )
 }
