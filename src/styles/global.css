@@ -71,6 +71,23 @@
   /* Icons */
   --icon-height: 24px;
   --icon-width: 24px;
+
+  /* Size */
+  --size-0-5: 4px;
+  --size-1: 8px;
+  --size-1-5: 12px;
+  --size-2: 16px;
+  --size-2-5: 20px;
+  --size-3: 24px;
+  --size-3-5: 28px;
+  --size-4: 32px;
+  --size-5: 40px;
+  --size-6: 48px;
+  --size-7: 56px;
+  --size-8: 64px;
+  --size-9: 72px;
+  --size-10: 80px;
+  --icon-width: 24px;
 }
 
 @media (max-width: 768px) {
@@ -81,4 +98,51 @@
     --form-input-font-size: var(--form-input-font-size-mobile);
     --username-font-size: var(--username-font-size-mobile);
   }
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+  background: linear-gradient(300deg, var(--color-primary-light), var(--color-secondary-light), var(--color-primary-light));
+  background-size: 180% 180%;
+  background-attachment: fixed;
+  background-position: center;
+  animation: gradient-animation 18s ease infinite;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
 }

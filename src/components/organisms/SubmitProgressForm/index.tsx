@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { headingOne, headingThree } from '../../../theme';
-import CardLayout from '../../templates/CardLayout'
+import { Card } from '~/components/Card';
 import Input from '../../molecules/Input';
 import Button from '../../atoms/Button';
 import { Cloud } from '../../atoms/Cloud';
@@ -72,7 +72,7 @@ const CloudFour = styled(Cloud)`
 `;
 
 const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
-  <CardLayout>
+  <Card>
     <Header>Submit Progress</Header>
     <Input 
       label={`Week ${currentWeek-1} Learning Progress`}
@@ -98,7 +98,7 @@ const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
     <CloudTwo />
     <CloudThree />
     <CloudFour />
-  </CardLayout>
+  </Card>
 )
 
 export default SubmitProgressForm;

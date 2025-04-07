@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { headingTwo } from '../../../theme';
-import CardLayout from '../../templates/CardLayout'
+import { Card } from '~/components/Card';
 import Button from '../../atoms/Button';
 import { Cloud } from '../../atoms/Cloud';
 
@@ -46,14 +46,14 @@ interface LoginFormProps {
 }
 
 const LoginForm = ({ onSubmit }: LoginFormProps) => (
-  <CardLayout>
+  <Card>
     <Header>Welcome Back</Header>
     <Form onSubmit={onSubmit}>
       <Button text='Login with Google' />
     </Form>
     <CloudOne />
     <CloudTwo />
-  </CardLayout>
+  </Card>
 )
 
 export default LoginForm;
