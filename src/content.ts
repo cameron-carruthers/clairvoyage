@@ -1,103 +1,63 @@
-import { tertiaryColor, secondaryColor } from "./theme"
-
 export const projects = [
   {
     id: '1',
-    icon: {
-      name: 'video',
-      color: tertiaryColor
-    },
-    name: 'Blaine'
+    name: 'Blaine',
+    icon: 'video',
   }, 
   {
     id: '2',
-    icon: {
-      name: 'laptop',
-      color: tertiaryColor
-    },
-    name: 'Cameron'
+    name: 'Cameron',
+    icon: 'laptop',
   },
   {
     id: '3',
-    icon: {
-      name: 'music',
-      color: tertiaryColor
-    },
-    name: 'Colby'
+    name: 'Colby',
+    icon: 'music',
   },
   {
     id: '4',
-    icon: {
-      name: 'music',
-      color: tertiaryColor
-    },
-    name: 'Collin'
+    name: 'Collin',
+    icon: 'music',
   },
   {
     id: '5',
-    icon: {
-      name: 'video',
-      color: tertiaryColor
-    },
-    name: 'Ian'
+    name: 'Ian',
+    icon: 'video',
   },
   {
     id: '6',
-    icon: {
-      name: 'image',
-      color: tertiaryColor
-    },
-    name: 'Johnny'
+    name: 'Johnny',
+    icon: 'image',
   },
   {
     id: '7',
-    icon: {
-      name: 'pen',
-      color: tertiaryColor
-    },
-    name: 'Kyle'
+    name: 'Kyle',
+    icon: 'pen',
   },
   {
     id: '8',
-    icon: {
-      name: 'video',
-      color: tertiaryColor
-    },
-    name: 'Ryan'
+    name: 'Ryan',
+    icon: 'video',
   },
   {
     id: '9',
-    icon: {
-      name: 'video',
-      color: tertiaryColor
-    },
-    name: 'Sydney'
+    name: 'Sydney',
+    icon: 'video',
   }
 ]
 
 export const channels = [
   {
     id: '1',
-    icon: {
-      name: 'chat',
-      color: secondaryColor
-    },
-    name: 'General'
+    name: 'General',
+    icon: 'chat',
   },
   {
     id: '2',
-    icon: {
-      name: 'chat',
-      color: secondaryColor
-    },
-    name: 'Inspiration'
+    name: 'Inspiration',
+    icon: 'chat',
   }
 ]
-
-export const goals = {
-  learningGoal: 'Watch first section of Typography course on Frontend Masters and read Typography chapter in Design for Hackers',
-  creativeGoal: 'Create design system (Color scheme, typography, buttons) and add wireframes for other parts of the site'
-}
 
 export const weeklyStatuses = [
   {

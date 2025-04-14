@@ -20,6 +20,7 @@
 }
 
 .nav-item-user {
+  all: unset;
   display: flex;
   align-items: center;
   border-radius: 1rem;
@@ -31,14 +32,6 @@
     background-color: var(--color-secondary-50);
     cursor: pointer;
   }
-}
-
-.nav-item-name {
-  font-family: var(--font-primary);
-  font-size: var(--medium-text-font-size);
-  font-weight: var(--font-weight-normal);
-  color: var(--color-text);
-  line-height: 0;
 }
 
 .nav-section {

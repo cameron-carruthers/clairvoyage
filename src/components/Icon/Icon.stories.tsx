@@ -1,12 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Icon from '.';
-import { 
-  tertiaryColor,
-  secondaryColor,
-  successColor,
-  textColor,
-  failColor
-} from '~/theme';
+import Icon from './Icon';
 
 const meta = {
   title: 'Components/Icon',
@@ -21,70 +14,60 @@ type Story = StoryObj<typeof meta>;
 
 export const Chat: Story = {
   args: {
-    iconName: 'chat',
-    color: secondaryColor
+    iconName: 'chat'
   },
 };
 
 export const Success: Story = {
   args: {
-    iconName: 'circle-check',
-    color: successColor
+    iconName: 'circle-check'
   },
 };
 
 export const Incomplete: Story = {
   args: {
-    iconName: 'circle',
-    color: textColor
+    iconName: 'circle'
   },
 };
 
 export const Fail: Story = {
   args: {
-    iconName: 'circle-x',
-    color: failColor
+    iconName: 'circle-x'
   },
 };
 
 export const Edit: Story = {
   args: {
-    iconName: 'pen',
-    color: tertiaryColor
+    iconName: 'pen'
   },
 };
 
 export const Home: Story = {
   args: {
-    iconName: 'house',
-    color: tertiaryColor
+    iconName: 'house'
   },
 };
 
 export const Laptop: Story = {
   args: {
-    iconName: 'laptop',
-    color: tertiaryColor
+    iconName: 'laptop'
   },
 };
 
 export const Music: Story = {
   args: {
-    iconName: 'music',
-    color: tertiaryColor
+    iconName: 'music'
   },
 };
 
 export const Picture: Story = {
   args: {
-    iconName: 'image',
-    color: tertiaryColor
+    iconName: 'image'
   },
 };
 
 export const Video: Story = {
   args: {
-    iconName: 'video',
-    color: tertiaryColor
+    iconName: 'video'
   },
 };

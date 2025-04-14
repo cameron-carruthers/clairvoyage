@@ -1,16 +1,15 @@
 import { IconSvgProps } from "../../types";
 
-export const Image = ({ width, height, color }: IconSvgProps) => (
+export const Image = ({ width, height, className }: IconSvgProps) => (
   <svg xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
     viewBox="0 0 24 24"
     fill="none"
-    stroke={color}
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-image"
+    className={className}
   >
     <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
     <circle cx="9" cy="9" r="2"/>

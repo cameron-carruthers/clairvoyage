@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { mediumText, successColor, failColor, textColor } from '../../../theme';
-import Icon from '../../Icon';
+import Icon from '../../Icon/Icon';
 
 const Container = styled.div`
   display: flex;
@@ -40,11 +40,10 @@ const WeeklyStatus = ({ week, status }: WeeklyStatusProps) => {
   }
 
   return ( 
-    <Container>
+    <Container style={{ ["--icon-color" as string]: color }}>
       <Week>{week}</Week>
       <Icon 
         iconName={iconName} 
-        color={color}
       />
     </Container>
   )

@@ -4,15 +4,16 @@ import {
   useRouter,
 } from '@tanstack/react-router';
 import { useState } from 'react';
-import LeftSidebarContent from "../../components/organisms/LeftSidebarContent";
-import RightSidebarContent from "../../components/organisms/RightSidebarContent";
 import SubmitProgressForm from "../../components/organisms/SubmitProgressForm";
 import { useAuth } from '../../auth'
 import Hamburger from '~/components/atoms/Hamburger';
 import { Card } from '~/components/Card';
-import { channels, goals, projects, weeklyStatuses } from '~/content';
+import { channels, projects, weeklyStatuses } from '~/content';
 
 import styles from './index.module.css';
+import { Nav } from '~/components/Nav';
+import SeasonProgress from '~/components/organisms/SeasonProgress';
+import Icon from '~/components/Icon/Icon';
 
 export const Route = createFileRoute('/_auth/')({
   beforeLoad: ({ context, location }) => {
@@ -47,10 +48,52 @@ function AuthLayout() {
       <div className={styles["desktop-container"]}>
         <div className={styles["left-sidebar-layout"]}>
           <Card appearance='secondary'>
-            <LeftSidebarContent 
-              projects={projects}
-              channels={channels}
-            />
+            <Nav style={{ justifyContent: "space-between" }}>
+              <div className={styles["main-nav-container"]}>
+                <Nav.Item
+                  to="/"
+                  style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+                >
+                  <Icon iconName='house' />
+                  <span className={styles['auth-nav-item-name']}>Home</span>
+                </Nav.Item>
+                <Nav.Section>
+                  <Nav.Header>Projects</Nav.Header>
+                  {projects.map((project) => (
+                    <Nav.Item
+                      key={project.id}
+                      to="/$id"
+                      params={{ id: project.id }}
+                      style={{ ["--icon-color" as string]: "var(--color-tertiary)"}}
+                    >
+                      <Icon iconName={project.icon} />
+                      <span className={styles['auth-nav-item-name']}>{project.name}</span>
+                    </Nav.Item>
+                  ))}
+                </Nav.Section>
+                <Nav.Section>
+                  <Nav.Header>Channels</Nav.Header>
+                  {channels.map((channel) => (
+                    <Nav.Item
+                      key={channel.id}
+                      to="/$id"
+                      params={{ id: channel.id }}
+                      style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+                    >
+                      <Icon iconName={channel.icon} />
+                      <span className={styles['auth-nav-item-name']}>{channel.name}</span>
+                    </Nav.Item>
+                  ))}
+                </Nav.Section>
+              </div>
+              <Nav.Item
+                onClick={handleLogout}
+                style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+              >
+                <Icon iconName="log-out" />
+                <span className={styles['auth-nav-item-name']}>Logout</span>
+              </Nav.Item>
+            </Nav>
           </Card>
         </div>
         <div className={styles["main-content"]}>
@@ -58,11 +101,7 @@ function AuthLayout() {
         </div>
         <div className={styles["right-sidebar-layout"]}>
           <Card appearance='secondary'>
-            <RightSidebarContent
-              goals={goals}
-              weeklyStatuses={weeklyStatuses}
-              handleLogout={handleLogout}
-            />
+            <SeasonProgress weeklyStatuses={weeklyStatuses}/>
           </Card>
         </div>
       </div>
@@ -74,10 +113,52 @@ function AuthLayout() {
           <Hamburger open={open} setOpen={setOpen} />
           <div data-open={open}>
             <Card appearance="secondary">
-              <LeftSidebarContent 
-                projects={projects}
-                channels={channels}
-              />
+              <Nav style={{ justifyContent: "space-between" }}>
+                <div className={styles["main-nav-container"]}>
+                  <Nav.Item
+                    to="/"
+                    style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+                  >
+                    <Icon iconName='house' />
+                    <span className={styles['auth-nav-item-name']}>Home</span>
+                  </Nav.Item>
+                  <Nav.Section>
+                    <Nav.Header>Projects</Nav.Header>
+                    {projects.map((project) => (
+                      <Nav.Item
+                        key={project.id}
+                        to="/$id"
+                        params={{ id: project.id }}
+                        style={{ ["--icon-color" as string]: "var(--color-tertiary)"}}
+                      >
+                        <Icon iconName={project.icon} />
+                        <span className={styles['auth-nav-item-name']}>{project.name}</span>
+                      </Nav.Item>
+                    ))}
+                  </Nav.Section>
+                  <Nav.Section>
+                    <Nav.Header>Channels</Nav.Header>
+                    {channels.map((channel) => (
+                      <Nav.Item
+                        key={channel.id}
+                        to="/$id"
+                        params={{ id: channel.id }}
+                        style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+                      >
+                        <Icon iconName={channel.icon} />
+                        <span className={styles['auth-nav-item-name']}>{channel.name}</span>
+                      </Nav.Item>
+                    ))}
+                  </Nav.Section>
+                </div>
+                <Nav.Item
+                  onClick={handleLogout}
+                  style={{ ["--icon-color" as string]: "var(--color-secondary)"}}
+                >
+                  <Icon iconName="log-out" />
+                  <span className={styles['auth-nav-item-name']}>Logout</span>
+                </Nav.Item>
+              </Nav>
             </Card>
           </div>
         </>

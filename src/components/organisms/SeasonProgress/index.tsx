@@ -8,7 +8,6 @@ const Header = styled.h1`
   font-weight: ${navigationHeading.fontWeight};
   line-height: 1.5;
   margin: 0;
-  margin-top: 1rem;
   color: ${navigationHeading.color};
 
   @media (max-width: 600px) {

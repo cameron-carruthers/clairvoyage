@@ -5,14 +5,16 @@ import { NavHeader } from "./NavHeader";
 
 import styles from './Nav.module.css';
 
-interface NavProps {
+export interface NavProps extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode;
 }
 
-export function Nav({ children }: NavProps) {
+export function Nav({ children, ...rest }: NavProps) {
   return (
-    <nav className={styles["nav"]}>{children}</nav>
-  )
+    <nav className={styles["nav"]} {...rest}>
+      {children}
+    </nav>
+  );
 }
 
 Nav.Item = NavItem;
