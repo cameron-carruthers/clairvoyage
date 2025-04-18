@@ -1,11 +1,8 @@
-import { styled } from 'styled-components';
-import { primaryFont, tertiaryColor, tertiaryHover } from '../../../theme';
-
-const ButtonStyle = styled.button`
+.button {
   padding: 0.5rem 2rem;
-  background: ${tertiaryColor};
+  background: var(--color-tertiary);
   border-radius: 6.25rem;
-  font-family: ${primaryFont};
+  font-family: var(--font-primary);
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
@@ -15,12 +12,12 @@ const ButtonStyle = styled.button`
   transition: background-color 0.2s linear, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 
   &:hover, &:focus, &:active {
-    background: ${tertiaryHover};
+    background-color: var(--color-tertiary-hover);
     transform: translateY(-2px);
   }
 
   &:focus {
-    outline: 2px solid ${tertiaryColor};
+    outline: 2px solid var(--color-tertiary);
     outline-offset: 2px;
   }
 
@@ -28,16 +25,4 @@ const ButtonStyle = styled.button`
     padding: 0.25rem 1.25rem;
     font-size: 1rem;
   }
-`
-
-interface ButtonProps {
-  text: string
 }
-
-const Button = ({ text }: ButtonProps) => (
-  <ButtonStyle>
-    {text}
-  </ButtonStyle>
-);
-
-export default Button;

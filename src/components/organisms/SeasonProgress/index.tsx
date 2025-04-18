@@ -25,15 +25,25 @@ interface WeeklyStatus {
 }
 
 const SeasonProgress = ({ weeklyStatuses }: SeasonProgressProps) => (
-  <section>
+  <section style={{
+    display: "flex",
+    flexDirection: "column", 
+    gap: "var(--size-1)"
+  }}>
     <Header>This Season</Header>
-    {weeklyStatuses.map(({ week, status }) => (
-      <WeeklyStatus
-        key={week}
-        week={week}
-        status={status}
-      />
-    ))}
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "var(--size-0-5)"
+    }}>
+      {weeklyStatuses.map(({ week, status }) => (
+        <WeeklyStatus
+          key={week}
+          week={week}
+          status={status}
+        />
+      ))}
+    </div>
   </section>
 )
 
