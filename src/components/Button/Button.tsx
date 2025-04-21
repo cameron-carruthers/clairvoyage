@@ -4,10 +4,8 @@ interface ButtonProps {
   text: string
 }
 
-const Button = ({ text }: ButtonProps) => (
+export const Button = ({ text }: ButtonProps) => (
   <button className={styles["button"]}>
     {text}
   </button>
 );
-
-export default Button;

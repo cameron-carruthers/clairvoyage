@@ -1,7 +1,5 @@
-import { styled } from "styled-components";
-
-export const Cloud = styled.div`
-	animation: move 6s ease infinite;
+.cloud {
+  animation: move 6s ease infinite;
   border-radius: 50%;
   position: absolute;
   margin-top: -30px;
@@ -18,4 +16,4 @@ export const Cloud = styled.div`
   @keyframes move{
     50% { transform: translateY(-15px); }
   }
-`;
+}

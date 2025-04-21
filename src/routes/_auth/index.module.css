@@ -29,6 +29,7 @@
   top: var(--size-2);
   left: var(--size-2);
   height: calc(100% - var(--size-4));
+  z-index: 2;
 
   div {
     height: 100%;
@@ -39,6 +40,7 @@
   position: fixed;
   top: var(--size-2);
   right: var(--size-2);
+  z-index: 2;
 }
 
 .menu {

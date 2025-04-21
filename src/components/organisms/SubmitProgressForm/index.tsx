@@ -2,8 +2,8 @@ import { styled } from 'styled-components';
 import { headingOne, headingThree } from '../../../theme';
 import { Card } from '~/components/Card';
 import Input from '../../molecules/Input';
-import Button from '../../atoms/Button/Button';
-import { Cloud } from '../../atoms/Cloud';
+import { Button } from '../../Button/Button';
+import { Cloud } from '~/components/Cloud';
 
 const Header = styled.h1`
   font-family: ${headingOne.fontFamily};
@@ -56,49 +56,56 @@ const CloudOne = styled(Cloud)`
 const CloudTwo = styled(Cloud)`
   animation-duration: 8s;
   top: 9rem;
-  right: 2.5rem;
+  right: 1.5rem;
 `;
 
 const CloudThree = styled(Cloud)`
   animation-duration: 7s;
-  bottom: 25rem;
-  left: -1.5rem;
+  bottom: 31rem;
+  left: -2rem;
 `;
 
 const CloudFour = styled(Cloud)`
   animation-duration: 9s;
-  bottom: -1.5rem;
+  bottom: 4.5rem;
   right: 2.5rem;
 `;
 
 const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
-  <Card>
-    <Header>Submit Progress</Header>
-    <Input 
-      label={`Week ${currentWeek-1} Learning Progress`}
-      rows={4}
-    />
-    <Input 
-      label={`Week ${currentWeek-1} Creative Progress`}
-      rows={4}
-    />
-    <Goals>Week {currentWeek} Goals</Goals>
-    <Input 
-      label={`Week ${currentWeek} Learning Goals`}
-      rows={2}
-    />
-    <Input 
-      label={`Week ${currentWeek} Creative Goals`}
-      rows={2}
-    />
-    <ButtonWrapper>
-      <Button text='Submit' />
-    </ButtonWrapper>
-    <CloudOne />
+  <div style={{
+    position: "relative",
+    paddingBottom: "6rem",
+    isolation: "isolate",
+    zIndex: 1
+  }}>
     <CloudTwo />
     <CloudThree />
+    <Card>
+      <Header>Submit Progress</Header>
+      <Input 
+        label={`Week ${currentWeek-1} Learning Progress`}
+        rows={4}
+      />
+      <Input 
+        label={`Week ${currentWeek-1} Creative Progress`}
+        rows={4}
+      />
+      <Goals>Week {currentWeek} Goals</Goals>
+      <Input 
+        label={`Week ${currentWeek} Learning Goals`}
+        rows={2}
+      />
+      <Input 
+        label={`Week ${currentWeek} Creative Goals`}
+        rows={2}
+      />
+      <ButtonWrapper>
+        <Button text='Submit' />
+      </ButtonWrapper>
+    </Card>
+    <CloudOne />
     <CloudFour />
-  </Card>
+  </div>
 )
 
 export default SubmitProgressForm;

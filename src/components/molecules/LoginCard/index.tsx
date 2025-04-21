@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 import { headingTwo } from '../../../theme';
 import { Card } from '~/components/Card';
-import Button from '../../atoms/Button/Button';
-import { Cloud } from '../../atoms/Cloud';
+import { Button } from '../../Button/Button';
+import { Cloud } from '~/components/Cloud';
 
 const Header = styled.h1`
   font-family: ${headingTwo.fontFamily};
