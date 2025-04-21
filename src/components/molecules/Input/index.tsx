@@ -25,7 +25,9 @@ const TextArea = styled.textarea`
   font-size: ${mediumText.fontSize.desktop};
   font-weight: ${mediumText.fontWeight};
   color: ${mediumText.color};
-  border: none;
+  border: 2px solid #fff;
+  background: hsla(0,0%,100%,.6);
+  backdrop-filter: blur(24px);
   margin-bottom: 1rem;
 
   &:focus, &:active {

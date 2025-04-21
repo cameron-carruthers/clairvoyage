@@ -1,18 +1,20 @@
 .button {
   padding: 0.5rem 2rem;
-  background: var(--color-tertiary);
+  background: hsla(0,0%,100%,.3);
+  backdrop-filter: blur(4px);
   border-radius: 6.25rem;
   font-family: var(--font-primary);
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  color: #fff;
-  border: none;
+  color: var(--color-text);
+  border: 2px solid #fff;
   cursor: pointer;
   transition: background-color 0.2s linear, transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 
   &:hover, &:focus, &:active {
-    background-color: var(--color-tertiary-hover);
+    background-color: hsla(0,0%,100%,.6);
+    backdrop-filter: blur(24px);
     transform: translateY(-2px);
   }
 
@@ -25,4 +27,16 @@
     padding: 0.25rem 1.25rem;
     font-size: 1rem;
   }
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, hsla(0,0,100%,0.2) 0%, hsla(0,0,100%,0.05) 100%);
+  border-radius: inherit;
+  pointer-events: none;
 }
