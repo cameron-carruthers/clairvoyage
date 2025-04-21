@@ -1,5 +1,7 @@
 import styles from './Cloud.module.css';
 
-export const Cloud = () => (
-  <div className={styles["cloud"]} />
+export interface CloudProps extends React.HTMLAttributes<HTMLElement> {}
+
+export const Cloud = (props: CloudProps) => (
+  <div className={styles["cloud"]} {...props} />
 );

@@ -48,23 +48,6 @@ interface SubmitProgressFormProps {
   currentWeek: number
 }
 
-const CloudOne = styled(Cloud)`
-  top: 0.5rem;
-  left: -1rem;
-`;
-
-const CloudTwo = styled(Cloud)`
-  animation-duration: 8s;
-  top: 9rem;
-  right: 1.5rem;
-`;
-
-const CloudThree = styled(Cloud)`
-  animation-duration: 7s;
-  bottom: 31rem;
-  left: -2rem;
-`;
-
 const CloudFour = styled(Cloud)`
   animation-duration: 9s;
   bottom: 4.5rem;
@@ -78,8 +61,8 @@ const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
     isolation: "isolate",
     zIndex: 1
   }}>
-    <CloudTwo />
-    <CloudThree />
+    <Cloud style={{ animationDuration: "8s", top: "9rem", right: "1.5rem" }} />
+    <Cloud style={{ animationDuration: "7s", bottom: "31rem", left: "-2rem" }} />
     <Card>
       <Header>Submit Progress</Header>
       <Input 
@@ -103,8 +86,8 @@ const SubmitProgressForm = ({ currentWeek }: SubmitProgressFormProps) => (
         <Button text='Submit' />
       </ButtonWrapper>
     </Card>
-    <CloudOne />
-    <CloudFour />
+    <Cloud style={{ top: "0.5rem", left: "-1rem" }} />
+    <Cloud style={{ animationDuration: "9s", bottom: "4.5rem", right: "2.5rem" }} />
   </div>
 )
 

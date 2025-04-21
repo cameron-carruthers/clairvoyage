@@ -1,3 +1,7 @@
+@keyframes move{
+  50% { transform: translateY(-15px); }
+}
+
 .cloud {
   animation: move 6s ease infinite;
   border-radius: 50%;
@@ -12,8 +16,4 @@
 		#FFFFFF 30px 10px, 
 		#FFFFFF 60px 15px 0 -10px, 
 		#FFFFFF 85px 5px 0 -5px;
-
-  @keyframes move{
-    50% { transform: translateY(-15px); }
-  }
 }

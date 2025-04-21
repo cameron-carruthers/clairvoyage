@@ -30,17 +30,6 @@ const Form = styled.form`
   }
 `
 
-const CloudOne = styled(Cloud)`
-  top: 1.5rem;
-  left: -1.5rem;
-`;
-
-const CloudTwo = styled(Cloud)`
-  animation-duration: 8s;
-  bottom: -2.5rem;
-  right: 0.5rem;
-`;
-
 interface LoginFormProps {
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => Promise<void>;
 }
@@ -51,8 +40,8 @@ const LoginForm = ({ onSubmit }: LoginFormProps) => (
     <Form onSubmit={onSubmit}>
       <Button text='Login with Google' />
     </Form>
-    <CloudOne />
-    <CloudTwo />
+    <Cloud style={{ top: "1.5rem", left: "-1.5rem" }} />
+    <Cloud style={{ animationDuration: "8s", bottom: "-2.5rem", right: "0.5rem" }} />
   </Card>
 )
 
