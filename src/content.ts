@@ -1,3 +1,5 @@
+import { Status } from "./components/StatusTracker/StatusTracker"
+
 export const projects = [
   {
     id: '1',
@@ -59,53 +61,53 @@ export const channels = [
   }
 ]
 
-export const weeklyStatuses = [
+export const statuses: Status[] = [
   {
-    week: 1,
+    label: '1',
     status: 'success'
   },
   {
-    week: 2,
+    label: '2',
     status: 'success'
   },
   {
-    week: 3,
+    label: '3',
     status: 'success'
   },
   {
-    week: 4,
+    label: '4',
     status: 'success'
   },
   {
-    week: 5,
+    label: '5',
     status: 'fail'
   },
   {
-    week: 6,
+    label: '6',
     status: 'success'
   },
   {
-    week: 7,
+    label: '7',
     status: 'success'
   },
   {
-    week: 8,
+    label: '8',
     status: 'success'
   },
   {
-    week: 9,
+    label: '9',
     status: 'success'
   },
   {
-    week: 10,
+    label: '10',
     status: 'incomplete'
   },
   {
-    week: 11,
+    label: '11',
     status: 'incomplete'
   },
   {
-    week: 12,
+    label: '12',
     status: 'incomplete'
   }
 ]

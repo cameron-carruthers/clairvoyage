@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 import { headingTwo } from '../../../theme';
 import { Card } from '~/components/Card';
-import { Button } from '../../Button/Button';
 import { Cloud } from '~/components/Cloud';
+import { FormButton } from '~/components/Form/FormButton';
 
 const Header = styled.h1`
   font-family: ${headingTwo.fontFamily};
@@ -38,7 +38,7 @@ const LoginForm = ({ onSubmit }: LoginFormProps) => (
   <Card>
     <Header>Welcome Back</Header>
     <Form onSubmit={onSubmit}>
-      <Button text='Login with Google' />
+      <FormButton>Login with Google</FormButton>
     </Form>
     <Cloud style={{ top: "1.5rem", left: "-1.5rem" }} />
     <Cloud style={{ animationDuration: "8s", bottom: "-2.5rem", right: "0.5rem" }} />

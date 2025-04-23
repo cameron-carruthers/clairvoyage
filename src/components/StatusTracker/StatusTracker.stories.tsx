@@ -1,66 +1,67 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import SeasonProgress from '.';
+import { StatusTracker } from './StatusTracker';
 
 const meta = {
-  title: 'Organisms/SeasonProgress',
-  component: SeasonProgress,
+  title: 'Organisms/StatusTracker',
+  component: StatusTracker,
   globals: {
     backgrounds: { value: 'light' },
   },
-} satisfies Meta<typeof SeasonProgress>;
+} satisfies Meta<typeof StatusTracker>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    weeklyStatuses: [
+    heading: 'This Season',
+    statuses: [
       {
-        week: 1,
+        label: "1",
         status: 'success'
       },
       {
-        week: 2,
+        label: "2",
         status: 'success'
       },
       {
-        week: 3,
+        label: "3",
         status: 'success'
       },
       {
-        week: 4,
+        label: "4",
         status: 'success'
       },
       {
-        week: 5,
+        label: "5",
         status: 'fail'
       },
       {
-        week: 6,
+        label: "6",
         status: 'success'
       },
       {
-        week: 7,
+        label: "7",
         status: 'success'
       },
       {
-        week: 8,
+        label: "8",
         status: 'success'
       },
       {
-        week: 9,
+        label: "9",
         status: 'success'
       },
       {
-        week: 10,
+        label: "10",
         status: 'incomplete'
       },
       {
-        week: 11,
+        label: "11",
         status: 'incomplete'
       },
       {
-        week: 12,
+        label: "12",
         status: 'incomplete'
       }
     ]
