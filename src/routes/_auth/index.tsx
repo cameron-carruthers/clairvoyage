@@ -98,53 +98,53 @@ function AuthLayout() {
           </Card>
         </div>
         <div className={styles["main-content"]}>
-          <Cloud style={{ animationDuration: "8s", top: "9rem", right: "1.5rem" }} />
-          <Cloud style={{ animationDuration: "7s", bottom: "31rem", left: "-2rem" }} />
-          <Card style={{
-            maxWidth: '670px'
-          }}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 'var(--size-1)'
-            }}>
-              <h1
-                style={{
-                  fontFamily: "var(--font-secondary)",
-                  fontSize: "var(--heading-two-font-size-desktop)",
-                  margin: 0,
-                  lineHeight: 1.5,
-                  fontWeight: "var(--font-weight-normal)",
-                  textAlign: "center"
-                }}
-              >Submit Progress</h1>
+          <div style={{ position: 'relative', maxWidth: '670px', width: '100%', height: 'fit-content' }}>
+            <Cloud style={{ animationDuration: "8s", top: "6rem", right: "1.5rem" }} />
+            <Cloud style={{ animationDuration: "7s", bottom: "2.5rem", left: "-2rem" }} />
+            <Card>
               <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 'var(--size-6)'
+                gap: 'var(--size-1)'
               }}>
+                <h1
+                  style={{
+                    fontFamily: "var(--font-secondary)",
+                    fontSize: "var(--heading-two-font-size-desktop)",
+                    margin: 0,
+                    lineHeight: 1.5,
+                    fontWeight: "var(--font-weight-normal)",
+                    textAlign: "center"
+                  }}
+                >Submit Progress</h1>
                 <div style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: 'var(--size-3)'
+                  gap: 'var(--size-6)'
                 }}>
-                  <Form.Field name="learning" type="text">
-                    <Form.Label>Week 1 Learning Progress</Form.Label>
-                    <Form.TextArea />
-                  </Form.Field>
-                  <Form.Field name="creative" type="text">
-                    <Form.Label>Week 1 Creative Progress</Form.Label>
-                    <Form.TextArea />
-                  </Form.Field>
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <Form.Button>Submit</Form.Button>
+                  <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 'var(--size-3)'
+                  }}>
+                    <Form.Field name="learning" type="text">
+                      <Form.Label>Week 1 Learning Progress</Form.Label>
+                      <Form.TextArea />
+                    </Form.Field>
+                    <Form.Field name="creative" type="text">
+                      <Form.Label>Week 1 Creative Progress</Form.Label>
+                      <Form.TextArea />
+                    </Form.Field>
+                  </div>
+                  <div style={{ textAlign: 'center' }}>
+                    <Form.Button>Submit</Form.Button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-          <Cloud style={{ top: "0.5rem", left: "-1rem" }} />
-          <Cloud style={{ animationDuration: "9s", bottom: "4.5rem", right: "2.5rem" }} />
+            </Card>
+            <Cloud style={{ top: "0.5rem", left: "-1rem" }} />
+            <Cloud style={{ animationDuration: "9s", bottom: "-1.5rem", right: "2.5rem" }} />
+          </div>
         </div>
         <div className={styles["right-sidebar-layout"]}>
           <Card appearance='secondary'>
